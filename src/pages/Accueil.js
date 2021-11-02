@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Consultation from "../../assets/images/accueil-hypnose.jpeg";
+import Consultation from "../assets/pictures/accueil-hypnose.jpeg";
 
 const Accueil = () => {
   return (
