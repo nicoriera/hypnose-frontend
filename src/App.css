@@ -2,9 +2,10 @@
   --main-bg-color: white;
   --header-text-color: rgb(99, 30, 99);
   --bloc-bg-color: rgb(99, 30, 99);
+  --border-border-color: rgb(99, 30, 99);
 }
 .site-container {
-  padding: 0 50px;
+  padding: 0 80px;
   background-color: var(--main-bg-color);
   height: 100vh;
   margin-top: 80px;
@@ -45,9 +46,8 @@
 
 .container-header {
   display: flex;
-  justify-content: space-around;
-  height: 30px;
-  width: 100vw;
+  padding: 0 80px;
+  justify-content: space-between;
   color: var(--header-text-color);
 }
 
@@ -60,16 +60,10 @@
 .accueil {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 30px;
 }
 
 .accueil-accroche {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .accueil-image {
   border-radius: 10px;
@@ -77,12 +71,14 @@
 
 .accueil-image img {
   border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .accueil-text-accroche {
-  width: 300px;
   margin-right: 50px;
   text-align: left;
+  width: 40%;
 }
 
 .accueil-text-accroche-citation {
@@ -98,25 +94,29 @@
 
 .accueil-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .accueil-text {
-  border-radius: 10px;
   width: 70%;
-
-  padding: 5px 10px;
+  color: var(--header-text-color);
+  border: 2px solid var(--border-border-color);
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
 .accueil-text-presentation {
   text-align: justify;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .accueil-text-contact {
   margin: 30px 0;
+  font-weight: bold;
+}
+
+.accueil-button {
+  margin-left: 20px;
 }
 
 /* CONTACT */
