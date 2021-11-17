@@ -11,12 +11,15 @@ const Seance = () => {
         Elle peut décider en toute autonomie de sortir de l’état d’hypnose. Elle
         peut aussi refuser certaines suggestions du thérapeute si celles-ci ne
         sont pas en accord avec ses valeurs profondes. Le travail va commencer
-        en vous dès la prise de rendez-vous. Que vous preniez réserviez un
-        créneau par téléphone, message ou sur Doctolib, nous aurons un bref
-        échange avant notre première rencontre. Nous faisons connaissance et
-        vous m’exposerez votre demande. Je vous explique en quoi et comment je
-        vais vous accompagner. Je vous donne les informations utiles à votre
-        venue afin que votre séance soit uniquement dédiée à votre mieux-être.
+        en vous dès la prise de rendez-vous.
+      </p>
+      <p>
+        Que vous preniez réserviez un créneau par téléphone, message ou sur
+        Doctolib, nous aurons un bref échange avant notre première rencontre.
+        Nous faisons connaissance et vous m’exposerez votre demande. Je vous
+        explique en quoi et comment je vais vous accompagner. Je vous donne les
+        informations utiles à votre venue afin que votre séance soit uniquement
+        dédiée à votre mieux-être.
       </p>
       <h3>Le jour J</h3>
       <p>

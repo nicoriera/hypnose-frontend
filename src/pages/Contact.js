@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_kzk130l",
+        "template_ek4pxmj",
+        form.current,
+        "user_cKq2Z3T1s3HXVMbKN6Cg6"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const initialValues = {
     nom: "",
     email: "",
@@ -60,11 +81,13 @@ const Contact = () => {
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
-            onSubmit={(values, { setSubmitting }) => {
+            onSubmit={(values, { setSubmitting, resetForm }) => {
               setTimeout(() => {
                 alert(JSON.stringify(values, null, 2));
                 setSubmitting(false);
               }, 400);
+              resetForm({ values: "" });
+              sendEmail();
             }}
           >
             {({
@@ -77,7 +100,11 @@ const Contact = () => {
               isSubmitting,
               /* and other goodies */
             }) => (
-              <form className="contact-formulary" onSubmit={handleSubmit}>
+              <form
+                ref={form}
+                className="contact-formulary"
+                onSubmit={sendEmail}
+              >
                 <input
                   id="nom"
                   type="text"
