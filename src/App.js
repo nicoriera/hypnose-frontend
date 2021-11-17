@@ -7,6 +7,7 @@ import Accueil from "./pages/Accueil";
 import Qui from "./pages/Qui";
 import Seance from "./pages/Seance";
 import Presentation from "./pages/Presentation";
+import Therapies from "./pages/Therapies";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           <Switch>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/therapies">
+              <Therapies />
             </Route>
             <Route path="/qui">
               <Qui />

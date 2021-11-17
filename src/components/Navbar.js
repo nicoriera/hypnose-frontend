@@ -12,17 +12,22 @@ const Navbar = () => {
         </li>
         <li>
           <Link className="link" to="/presentation">
-            Présentation
+            L’hypnose, c’est quoi ?
           </Link>
         </li>
         <li>
           <Link className="link" to="/seance">
-            Séance
+            Comment se déroule une séance ?
           </Link>
         </li>
         <li>
           <Link className="link" to="/qui">
-            Qui
+            Votre hypnothérapeute
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to="/therapies">
+            Thérapies et tarifs
           </Link>
         </li>
         <li>

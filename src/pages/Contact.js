@@ -27,20 +27,31 @@ const Contact = () => {
         <div className="infos-contact">
           <div className="info-christophe">
             <h4>Christophe BACCOU</h4>
-            <p>Formation à l'IFH (institut français d'hypnose) à Bordeaux</p>
+            <p>
+              Formé à l’hypnose Ericksonnienne et à la PNL (Programmation Neuro
+              Linguistique) au sein de l’école de psychotéraphie Psynapse
+              (Institut Européen reconnu par le World Hypnosis Organization
+              (WHO)), je suis également diplômé de la spécialité gestion du
+              poids et arrêt du tabac.
+            </p>
           </div>
 
           <div className="info-consultation">
             <h4>Consultations</h4>
             <p>
-              Durant le confinement du au COVID, possibilité de séance par
-              visioconférence.
+              Installé sur Hendaye au 14 boulevard Charles de Gaulle, je vous
+              reçois sur rendez-vous les lundi, mardi, mercredi, jeudi et samedi
+              matin.
+            </p>
+            <p>
+              Parking gratuit à Gaztelu Zahar (140 mètres) Bus n°3 – Arrêt Ville
+              (70 mètres) Bus n°33-35-37 – Arrêt Mairie (220 mètres)
             </p>
             <div>Hendaye</div>
-            <div>7 impasse Saint Paul</div>
+            <div>14 boulevard Charles de Gaulle</div>
             <div>64700 HENDAYE</div>
-            <div>Tél. 06 12 34 56 78</div>
-            <div>contact@chris-hypnose.fr</div>
+            <div>Tél. 06 xx xx xx xx</div>
+            <div>contact@xxxxx.fr</div>
           </div>
         </div>
 

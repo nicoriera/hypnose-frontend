@@ -3,32 +3,28 @@ import React from "react";
 const Presentation = () => {
   return (
     <div>
-      <h2>Cabinet d'Hypnose à Hendaye</h2>
+      <h2>L’hypnose c’est quoi ?</h2>
       <p>
-        Une première séance d'hypnose peut parfois soulever certaines
-        hésitations, voir des interrogations. Ne vous laissez pas porter par les
-        incertitudes et découvrez en détails comment se déroule une séance
-        d'hypnose dans notre cabinet à Hendaye.
+        L’hypnose est ce qu’on appelle scientifiquement un « état de conscience
+        modifié ». C’est un état naturel que l’on expérimente au quotidien.
+        Lorsqu’on lit un livre et que notre concentration s’évade, quand on
+        conduit sur un trajet connu et que l’on ne réfléchit plus vraiment à la
+        route. Dans tous ces moments là du quotidien, nous sommes dans cet état
+        de conscience modifié. Physiquement ici, mentalement ailleurs. C’est
+        dans ces moments que notre inconscient, aussi appelée notre partie
+        automatique, prend le relais de notre conscient. En activant de façon
+        volontaire cet état de transe hypnotique lors d’une séance, le client
+        accède à toutes ses ressources nécessaires pour évoluer vers le
+        mieux-être.
       </p>
       <div>
-        <h4>L'hypnose Ericksonienne</h4>
+        <h4>Remarque</h4>
         <p>
-          En tant que thérapie brève orientée solution, l’hypnose Ericksonienne
-          est utile pour tout travail sur les émotions.
-        </p>
-      </div>
-      <div>
-        <h4>Votre séance d'hypnose</h4>
-        <p>
-          Découvrez en détails comment se déroule une séance d’hypnose avec
-          Chrsitphe BACCOU Tarifs, durée et forfaits.
-        </p>
-      </div>
-      <div>
-        <h4>Votre hypnothérapeute</h4>
-        <p>
-          Passionné par le cerveau et la psychologie, découvrez le profil de
-          Christophe BACCOU, hypnotiseur à Hendaye.
+          Une séance d'hypnose ne remplace en aucune manière un avis ou un
+          traitement médical. Seul un médecin peut poser des diagnostics et lui
+          seul est habilité à prescrire, modifier ou supprimer un traitement
+          médical. L'hypnose peut vous accompagner lors de votre traitement
+          prescrit par votre médecin, parlez-en avec lui.
         </p>
       </div>
     </div>
