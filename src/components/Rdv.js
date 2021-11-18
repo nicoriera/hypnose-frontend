@@ -3,9 +3,9 @@ import React from "react";
 const Rdv = (props) => {
   return (
     <div>
-      <div className="bloc-tarif" style={{ backgroundColor: props.color }}>
-        <div className="tarif-titre">
-          <h3>{props.rdv}</h3>
+      <div className="bloc-rdv" style={{ backgroundColor: props.color }}>
+        <div>
+          <h3 className="rdv-titre">{props.rdv}</h3>
           <span>{props.age}</span>
         </div>
         <p>{props.infos}</p>
@@ -14,7 +14,7 @@ const Rdv = (props) => {
           <span>{props.duree}</span>
         </div>
 
-        <div className="bloc-tarif-prix">
+        <div className="bloc-prix">
           <span>Prix :</span>
           <span>{props.prix}</span>
         </div>

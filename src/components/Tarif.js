@@ -4,8 +4,8 @@ const Tarif = (props) => {
   return (
     <div>
       <div className="bloc-tarif" style={{ backgroundColor: props.color }}>
-        <div className="tarif-titre">
-          <h3>{props.tarif}</h3>
+        <div>
+          <h3 className="tarif-titre">{props.tarif}</h3>
           <span>{props.age}</span>
           <ul>
             <li>{props.etudiant}</li>
@@ -15,7 +15,7 @@ const Tarif = (props) => {
         </div>
         <p>{props.infos}</p>
 
-        <div className="bloc-tarif-prix">
+        <div className="bloc-prix">
           <span>Prix :</span>
           <span>{props.prix}</span>
         </div>
