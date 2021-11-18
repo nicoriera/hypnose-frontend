@@ -42,6 +42,10 @@
   color: var(--header-text-color);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* HEADER */
 
 .container-header {
@@ -117,6 +121,39 @@
 
 .accueil-button {
   margin-left: 20px;
+}
+
+/* THERAPIES TARIFS */
+.container-tarifs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bloc-tarif {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-left: 20px;
+  width: 200px;
+  height: 500px;
+}
+
+.tarif-titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloc-tarif-prix {
+  margin-top: 20px;
+  display: flex;
+  height: 50px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
 /* CONTACT */
