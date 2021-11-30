@@ -3,11 +3,11 @@ import React from "react";
 const Forfait = (props) => {
   return (
     <div>
-      <div className="bloc-forfait" style={{ backgroundColor: props.color }}>
-        <div className="forfait-titre">
+      <div className="bloc-info" style={{ backgroundColor: props.color }}>
+        <div className="tarif-titre">
           <h3>{props.forfait}</h3>
         </div>
-        <p>{props.infos}</p>
+        <p className="tarif-infos">{props.infos}</p>
 
         <div className="bloc-prix">
           <span>Prix :</span>

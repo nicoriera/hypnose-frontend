@@ -3,17 +3,16 @@ import React from "react";
 const Tarif = (props) => {
   return (
     <div>
-      <div className="bloc-tarif" style={{ backgroundColor: props.color }}>
+      <div className="bloc-info" style={{ backgroundColor: props.color }}>
         <div>
           <h3 className="tarif-titre">{props.tarif}</h3>
-          <span>{props.age}</span>
           <ul>
             <li>{props.etudiant}</li>
             <li>{props.demandeur}</li>
             <li>{props.rsa}</li>
           </ul>
         </div>
-        <p>{props.infos}</p>
+        <p className="tarif-infos">{props.infos}</p>
 
         <div className="bloc-prix">
           <span>Prix :</span>

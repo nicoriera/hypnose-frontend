@@ -3,12 +3,12 @@ import React from "react";
 const Rdv = (props) => {
   return (
     <div>
-      <div className="bloc-rdv" style={{ backgroundColor: props.color }}>
+      <div className="bloc-info" style={{ backgroundColor: props.color }}>
         <div>
-          <h3 className="rdv-titre">{props.rdv}</h3>
+          <h3 className="tarif-titre">{props.rdv}</h3>
           <span>{props.age}</span>
         </div>
-        <p>{props.infos}</p>
+        <p className="tarif-infos">{props.infos}</p>
         <div>
           <span className="bold">Durée :</span>
           <span>{props.duree}</span>

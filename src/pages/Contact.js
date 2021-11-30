@@ -3,13 +3,15 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
 
+// import Map from "../components/Map";
+
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_kzk130l",
+        "service_lk100qa",
         "template_ek4pxmj",
         form.current,
         "user_cKq2Z3T1s3HXVMbKN6Cg6"
@@ -72,7 +74,7 @@ const Contact = () => {
             <div>14 boulevard Charles de Gaulle</div>
             <div>64700 HENDAYE</div>
             <div>Tél. 06 xx xx xx xx</div>
-            <div>contact@xxxxx.fr</div>
+            <div>christophebaccou.hypnose@gmail.com</div>
           </div>
         </div>
 
