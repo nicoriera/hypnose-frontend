@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import Consultation from "../assets/pictures/fond_accueil.jpg";
 
@@ -7,16 +7,14 @@ const Accueil = () => {
   return (
     <div className="container-accueil">
       <div className="accueil">
-        <div className="accueil-accroche">
+        <div style={{backgroundImage: `url(${Consultation})`}} className="accueil-accroche">
           <div className="accueil-text-accroche">
             <h2 className="accueil-text-accroche-citation">
               « Le changement est une porte qui ne s’ouvre que de l’intérieur »
             </h2>
-            <p>Tom Peters</p>
+            <p >Tom Peters</p>
           </div>
-          <div className="accueil-image">
-            <img src={Consultation} alt="Consultation" />
-          </div>
+         
         </div>
 
         <div className="accueil-info">
@@ -30,14 +28,24 @@ const Accueil = () => {
               sur nos vies. Vous avez déjà, sans le savoir, fait une partie du
               chemin. Continuons cette route ensemble.
             </div>
-            <div className="accueil-text-contact">DOCTOLIB ET N° tél</div>
+          </div>
+          <div className="accueil-contact">
+            <div className="accueil-contact-presentation">
+            <h3>Contact</h3>
+              <div>Hendaye</div>
+            <div>14 boulevard Charles de Gaulle</div>
+            <div>64700 HENDAYE</div>
+            <div>Tél. 06 xx xx xx xx</div>
+            <div>christophebaccou.hypnose@gmail.com</div>
+            </div>
+            {/* <div className="accueil-text-contact">DOCTOLIB ET N° tél</div> */}
           </div>
 
-          <div className="accueil-button">
+          {/* <div className="accueil-button">
             <Link to="/presentation">
               <button className="button-contact">En savoir plus</button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
