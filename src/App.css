@@ -99,23 +99,27 @@ font-size: 30px;
 text-align: right;
 
 }
-
 .accueil-info {
   display: flex;
   margin-top: 50px;
   margin-bottom: 50px;
+  height: auto;
+  justify-content: space-between;
 }
-
 .accueil-text, .accueil-contact {
   width: 50%;
   color: var(--header-text-color);
   border-radius: 10px;
   padding: 10px 20px;
+  border: 1px solid black;
 }
 .accueil-contact {
-margin-left: 20px;
+  display: flex;
+  margin-left: 20px;
+  box-sizing: border-box;
 }
 .accueil-text-presentation {
+  
   text-align: justify;
   font-size: 20px;
 }
@@ -123,27 +127,18 @@ margin-left: 20px;
   text-align: justify;
   font-size: 18px;
 }
-
-
-
-/* .accueil-text-contact {
-  margin: 30px 0;
-  font-weight: bold;
-  
-} */
 .logos-hypnose{
   display: flex;
   height: 100px;
   margin-bottom: 50px;
+
 }
 .logo-psynapse, .logo-who{
   display: flex;
   width: 50%;
   justify-content: center;
 }
-/* .accueil-button {
-  margin-left: 20px;
-} */
+
 
 /* THERAPIES TARIFS */
 .container-tarifs,.container-therapies {
@@ -152,7 +147,6 @@ margin-left: 20px;
   align-items: center;
   
 }
-
 .tarifs-blocs, .therapies-blocs{
   display: flex;
   justify-content: center;
@@ -169,9 +163,6 @@ margin-left: 20px;
   border-radius: 10px;
  
 }
-
-
-
 .tarif-titre, .therapie-titre {
   display: flex;
   flex-direction: column;
@@ -189,7 +180,6 @@ margin-left: 20px;
   justify-content: center;
   font-weight: bold;
 }
-
 .tarif-infos{
   min-height: 80px;
 }
@@ -260,3 +250,13 @@ textarea[type="textaera"] {
   font-weight: bold;
   color: red;
 }
+
+
+/* .accueil-text-contact {
+  margin: 30px 0;
+  font-weight: bold;
+} */
+
+/* .accueil-button {
+  margin-left: 20px;
+} */

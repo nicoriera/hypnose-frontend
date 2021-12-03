@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// PICTURES
 import Consultation from "../assets/pictures/fond_accueil.jpg";
 import LogoPsynapse from "../assets/pictures/logo_psynapse.png"
 import LogoWho from "../assets/pictures/logo_who.png"
+
+import Map from "../components/Map"
 
 const Accueil = () => {
   return (
@@ -35,24 +38,19 @@ const Accueil = () => {
             <div className="accueil-contact-presentation">
             <h3>Contact</h3>
             <div>Hendaye</div>
-            <div>14 boulevard Charles de Gaulle</div>
+            <div>14 boulevard du Général de Gaulle</div>
             <div>64700 HENDAYE</div>
             <div>Tél. 06 xx xx xx xx</div>
             <div>christophebaccou.hypnose@gmail.com</div>
             </div>
-            {/* <div className="accueil-text-contact">DOCTOLIB ET N° tél</div> */}
+            <div>
+            <Map className="container-map"/>
+            </div>
+            
           </div>
-
-          {/* <div className="accueil-button">
-            <Link to="/presentation">
-              <button className="button-contact">En savoir plus</button>
-            </Link>
-          </div> */}
         </div>
 
         <div className="logos-hypnose">
-        
-       
         <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
         <img src={LogoPsynapse} alt="logo-psynapse" />
         </Link>
@@ -60,9 +58,23 @@ const Accueil = () => {
         <img src={LogoWho} alt="logo-who" />
         </Link>
         </div>
+       
       </div>
+
+     
+     
     </div>
+
   );
 };
 
 export default Accueil;
+
+
+{/* <div className="accueil-text-contact">DOCTOLIB ET N° tél</div> */}
+
+{/* <div className="accueil-button">
+            <Link to="/presentation">
+              <button className="button-contact">En savoir plus</button>
+            </Link>
+          </div> */}

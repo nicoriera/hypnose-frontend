@@ -71,7 +71,7 @@ const Contact = () => {
               (70 mètres) Bus n°33-35-37 – Arrêt Mairie (220 mètres)
             </p>
             <div>Hendaye</div>
-            <div>14 boulevard Charles de Gaulle</div>
+            <div>14 boulevard du Général de Gaulle</div>
             <div>64700 HENDAYE</div>
             <div>Tél. 06 xx xx xx xx</div>
             <div>christophebaccou.hypnose@gmail.com</div>
