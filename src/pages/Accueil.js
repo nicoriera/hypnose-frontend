@@ -34,7 +34,7 @@ const Accueil = () => {
           <div className="accueil-contact">
             <div className="accueil-contact-presentation">
             <h3>Contact</h3>
-              <div>Hendaye</div>
+            <div>Hendaye</div>
             <div>14 boulevard Charles de Gaulle</div>
             <div>64700 HENDAYE</div>
             <div>Tél. 06 xx xx xx xx</div>
