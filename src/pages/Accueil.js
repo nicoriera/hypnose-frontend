@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Consultation from "../assets/pictures/fond_accueil.jpg";
 import LogoPsynapse from "../assets/pictures/logo_psynapse.png"
@@ -51,9 +51,14 @@ const Accueil = () => {
         </div>
 
         <div className="logos-hypnose">
-        <div className="logo-psynapse"><img src={LogoPsynapse} alt="logo-psynapse" /></div>
-        <div className="logo-who"><img src={LogoWho} alt="logo-who" /></div>
         
+       
+        <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
+        <img src={LogoPsynapse} alt="logo-psynapse" />
+        </Link>
+        <Link className="logo-who" to={{ pathname: "https://www.world-hypnosis.org/fr" }} target="_blank">
+        <img src={LogoWho} alt="logo-who" />
+        </Link>
         </div>
       </div>
     </div>
