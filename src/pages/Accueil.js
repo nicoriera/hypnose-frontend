@@ -2,6 +2,8 @@ import React from "react";
 // import { Link } from "react-router-dom";
 
 import Consultation from "../assets/pictures/fond_accueil.jpg";
+import LogoPsynapse from "../assets/pictures/logo_psynapse.png"
+import LogoWho from "../assets/pictures/logo_who.png"
 
 const Accueil = () => {
   return (
@@ -46,6 +48,12 @@ const Accueil = () => {
               <button className="button-contact">En savoir plus</button>
             </Link>
           </div> */}
+        </div>
+
+        <div className="logos-hypnose">
+        <div className="logo-psynapse"><img src={LogoPsynapse} alt="logo-psynapse" /></div>
+        <div className="logo-who"><img src={LogoWho} alt="logo-who" /></div>
+        
         </div>
       </div>
     </div>

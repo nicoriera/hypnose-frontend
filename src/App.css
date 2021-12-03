@@ -124,10 +124,19 @@ margin-left: 20px;
   margin: 30px 0;
   font-weight: bold;
 }
-
-.accueil-button {
-  margin-left: 20px;
+.logos-hypnose{
+  display: flex;
+  height: 100px;
+  margin-bottom: 50px;
 }
+.logo-psynapse, .logo-who{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+/* .accueil-button {
+  margin-left: 20px;
+} */
 
 /* THERAPIES TARIFS */
 .container-tarifs,.container-therapies {
