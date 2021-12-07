@@ -35,6 +35,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+         <li>
+          <Link className="link" to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
+            Prendre rendez-vous
+          </Link>
+        </li>
       </ul>
     </nav>
   );
