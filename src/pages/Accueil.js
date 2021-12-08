@@ -61,7 +61,7 @@ const Accueil = () => {
             </div>
           </div>
          <div className="picture-accueil">
-            <img  src={Consultation} alt="picture-accueil" />
+            <img  src={Consultation} alt="accueil" />
           </div>
           </div>
           <div className="accueil-contact">
@@ -74,7 +74,7 @@ const Accueil = () => {
             <div>christophebaccou.hypnose@gmail.com</div>
             </div>
             <div>
-            <Map className="container-map"/>
+            <Map />
             </div>
           </div>
       </div>
