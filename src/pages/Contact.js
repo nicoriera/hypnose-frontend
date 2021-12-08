@@ -45,11 +45,11 @@ const Contact = () => {
   });
 
   return (
-    <div>
+    <div className="container">
       <div className="container-contact">
         <div className="infos-contact">
           <div className="info-christophe">
-            <h4>Christophe BACCOU</h4>
+            <h2>Christophe BACCOU</h2>
             <p>
               Formé à l’hypnose Ericksonnienne et à la PNL (Programmation Neuro
               Linguistique) au sein de l’école de psychotéraphie Psynapse

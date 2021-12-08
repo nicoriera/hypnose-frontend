@@ -4,7 +4,7 @@
   --bloc-bg-color-20: rgba(99, 30, 99, 0.123);
   --border-border-color: rgb(99, 30, 99);
   --shadow: 0 4px 4px hsl(0deg 0% 0% / 0.1);
-  --text-courant: 20px;
+  --text-courant: 18px;
   --text-color:rgb(99, 30, 99);
   --line-height: 30px;
 }
@@ -237,6 +237,7 @@ margin-left: 30px;
   width: 20%;
   height: 100%;
   margin-right: 20px; 
+  border-radius: 10px;
 }
 .seance-image img{
   width: 100%;
@@ -245,12 +246,21 @@ margin-left: 30px;
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
+
+/* QUI */
+.qui-textes{
+  margin-top: 40px;
+}
 /* THERAPIES TARIFS */
+.container-blocs{
+  display: flex;
+  flex-direction: column;
+}
 .container-tarifs,.container-therapies {
   display: flex;
   flex-direction:column;
   align-items: center;
-
+  margin-top: 40px;
 }
 .tarifs-blocs, .therapies-blocs{
   display: flex;
@@ -266,7 +276,6 @@ margin-left: 30px;
   width: 200px;
   min-height: 450px;
   border-radius: 10px;
-
 }
 .tarif-titre, .therapie-titre {
   display: flex;
@@ -294,6 +303,7 @@ margin-left: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 40px;
 }
 .infos-contact {
   display: flex;
