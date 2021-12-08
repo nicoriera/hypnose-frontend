@@ -1,11 +1,11 @@
 :root {
   --main-bg-color: white;
-  --text-color: rgb(99, 30, 99);
   --bloc-bg-color: rgb(99, 30, 99);
   --bloc-bg-color-20: rgba(99, 30, 99, 0.123);
   --border-border-color: rgb(99, 30, 99);
   --shadow: 0 4px 4px hsl(0deg 0% 0% / 0.1);
   --text-courant: 20px;
+  --text-color:rgb(99, 30, 99);
   --line-height: 30px;
 }
 .site-container {
@@ -26,7 +26,6 @@
 .link-mail {
   text-decoration: none;
   background-color: none;
-  color: var(--text-color);
 }
 .link-mail:hover {
   font-weight: bold;
@@ -38,7 +37,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-color);
   box-shadow: var(--shadow);
   position: fixed;
   top: 0;
@@ -69,14 +67,12 @@
   background-color: none;
   padding: 10px;
   border-radius: 5px;
-  color: var(--text-color);
 }
 .link-bold {
   text-decoration: none;
   background-color: none;
   padding: 10px;
   border-radius: 5px;
-  color: var(--text-color);
   font-size: var(--text-courant);
   font-weight: bold;
 }
@@ -90,7 +86,6 @@
 }
 .link-home {
   text-decoration: none;
-  color: var(--text-color);
 }
 
 /* ACCUEIL */
@@ -113,12 +108,10 @@ width: 70%;
 
 }
 .accueil-text-accroche-citation {
-color: var(--text-color);
 font-size: 50px;
 text-align: justify;
 }
 .accueil-text-accroche p {
-color: var(--text-color);
 font-size: 30px;
 text-align: right;
 }
@@ -127,7 +120,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-color: var(--text-color);
 margin-top: 100px;
 margin-bottom: 60px;
 } 
@@ -148,7 +140,6 @@ margin-bottom: 60px;
 .accueil-qui-text {
  display: flex;
 flex-direction: column;
- color: var(--text-color);
  width: 60%;
  font-size: 20px;
  line-height: var(--line-height);
@@ -160,7 +151,8 @@ flex-direction: column;
   margin-bottom: 50px;
   margin-top: 30px;
 }
-.logo-psynapse, .logo-who, .logo-ffhtb{
+.logo-psynapse, .logo-who, .logo-ffhtb
+{
   display: flex;
   width: 35%;
   justify-content: center;
@@ -179,12 +171,10 @@ border-radius: 10px;
 box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
 }
 .container-footer {
-  color: var(--text-color);
   display: flex;
   margin: 100px 0;
   height: auto; 
   position: relative;
-
 }
 .footer-text {
   display: flex;
@@ -199,6 +189,7 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
 }
 
 /* PRESENTATION */
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -209,7 +200,6 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
   align-items: center;
 }
 .presentation-hypnose-text{
-  color: var(--text-color);
   text-align: justify;
   line-height: var(--line-height);
   font-size: var(--text-courant);
@@ -229,11 +219,32 @@ margin-left: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--text-color);
   margin-top: 50px;
   font-size: 18px;
 }
 
+/* SEANCE */
+.seance{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.seance-textes{
+  width: 80%;
+  font-size: var(--text-courant);
+}
+.seance-image{
+  width: 20%;
+  height: 100%;
+  margin-right: 20px; 
+}
+.seance-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
 /* THERAPIES TARIFS */
 .container-tarifs,.container-therapies {
   display: flex;
