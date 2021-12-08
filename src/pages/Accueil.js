@@ -11,7 +11,7 @@ import Map from "../components/Map"
 
 const Accueil = () => {
   return (
-    <div className="container-accueil">
+    <div className="container">
       <div className="accueil">
         <div  className="accueil-accroche">
           <div className="accueil-text-accroche">

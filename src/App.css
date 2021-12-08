@@ -13,6 +13,10 @@
   margin-top: 20px;
   overflow-x: hidden;
 }
+.container {
+  display: flex;
+  margin-top: 80px;
+  }
 .bold {
   font-weight: bold;
 }
@@ -21,11 +25,19 @@
 
 .container-header {
   display: flex;
-  padding: 0 80px;
   align-items: center;
   justify-content: center;
   color: var(--header-text-color);
   box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #ffffff;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 .header-logo {
   width: 200px;
@@ -71,9 +83,6 @@
 
 /* ACCUEIL */
 
-.container-accueil {
-display: flex;
-}
 .accueil {
 display: flex;
 flex-direction: column;
@@ -129,9 +138,6 @@ flex-direction: column;
  width: 60%;
  font-size: 20px;
 }
-.accueil-qui button {
-align-items: center;
-}
 .logos-hypnose{
   display: flex;
   width: 100%;
@@ -177,6 +183,11 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
   background-color: var(--bloc-bg-color-20);
 }
 
+/* PRESENTATION */
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
 
 /* THERAPIES TARIFS */
 .container-tarifs,.container-therapies {

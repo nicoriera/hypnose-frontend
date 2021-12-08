@@ -2,8 +2,9 @@ import React from "react";
 
 const Presentation = () => {
   return (
-    <div>
-      <h2>L’hypnose c’est quoi ?</h2>
+    <div className="container">
+    <div className="presentation">
+     <h2>L’hypnose c’est quoi ?</h2>
       <p>
         L’hypnose est ce qu’on appelle scientifiquement un « état de conscience
         modifié ». C’est un état naturel que l’on expérimente au quotidien.
@@ -27,6 +28,8 @@ const Presentation = () => {
           prescrit par votre médecin, parlez-en avec lui.
         </p>
       </div>
+    </div>
+     
     </div>
   );
 };
