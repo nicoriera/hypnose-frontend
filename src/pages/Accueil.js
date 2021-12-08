@@ -7,7 +7,8 @@ import LogoPsynapse from "../assets/pictures/logo_psynapse.png"
 import LogoWho from "../assets/pictures/logo_who.png"
 import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg"
 
-import Map from "../components/Map"
+
+
 
 const Accueil = () => {
   return (
@@ -63,19 +64,6 @@ const Accueil = () => {
          <div className="picture-accueil">
             <img  src={Consultation} alt="accueil" />
           </div>
-          </div>
-          <div className="accueil-contact">
-            <div className="accueil-contact-presentation">
-            <h3>Contact</h3>
-            <div>Hendaye</div>
-            <div>14 boulevard du Général de Gaulle</div>
-            <div>64700 HENDAYE</div>
-            <div>Tél. 06 xx xx xx xx</div>
-            <div>christophebaccou.hypnose@gmail.com</div>
-            </div>
-            <div>
-            <Map />
-            </div>
           </div>
       </div>
     </div>

@@ -1,9 +1,12 @@
 :root {
   --main-bg-color: white;
-  --header-text-color: rgb(99, 30, 99);
+  --text-color: rgb(99, 30, 99);
   --bloc-bg-color: rgb(99, 30, 99);
-  --bloc-bg-color-20: rgba(99, 30, 99, 0.199);
+  --bloc-bg-color-20: rgba(99, 30, 99, 0.123);
   --border-border-color: rgb(99, 30, 99);
+  --shadow: 0 4px 4px hsl(0deg 0% 0% / 0.1);
+  --text-courant: 20px;
+  --line-height: 30px;
 }
 .site-container {
   padding: 0 80px;
@@ -20,6 +23,14 @@
 .bold {
   font-weight: bold;
 }
+.link-mail {
+  text-decoration: none;
+  background-color: none;
+  color: var(--text-color);
+}
+.link-mail:hover {
+  font-weight: bold;
+}
 
 /* HEADER */
 
@@ -27,46 +38,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--header-text-color);
-  box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
+  color: var(--text-color);
+  box-shadow: var(--shadow);
   position: fixed;
   top: 0;
   left: 0;
+  padding: 0 20px;
   width: 100%;
   z-index: 999;
   background-color: #ffffff;
-  padding-top: 0px;
-  padding-bottom: 0px;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 .header-logo {
-  width: 200px;
+  width: 220px;
   margin: 10px 0;
 }
 .menu {
   display: flex;
   align-items: center;
+  box-sizing:border-box;
 }
 .menu li {
   display: flex;
   margin: 5px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .link {
   text-decoration: none;
   background-color: none;
   padding: 10px;
   border-radius: 5px;
-  color: var(--header-text-color);
+  color: var(--text-color);
 }
 .link-bold {
   text-decoration: none;
   background-color: none;
   padding: 10px;
   border-radius: 5px;
-  color: var(--header-text-color);
-  font-size: 20px;
+  color: var(--text-color);
+  font-size: var(--text-courant);
   font-weight: bold;
 }
 .link:hover, .link-bold:hover {
@@ -75,10 +86,11 @@
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 18px;
 }
 .link-home {
   text-decoration: none;
-  color: var(--header-text-color);
+  color: var(--text-color);
 }
 
 /* ACCUEIL */
@@ -86,6 +98,7 @@
 .accueil {
 display: flex;
 flex-direction: column;
+margin-top: 40px;
 }
 .accueil-accroche {
 display: flex;
@@ -97,15 +110,15 @@ justify-content: center;
 display: flex;
 flex-direction: column;
 width: 70%;
-margin-top: 40px;
+
 }
 .accueil-text-accroche-citation {
-color: var(--header-text-color);
+color: var(--text-color);
 font-size: 50px;
 text-align: justify;
 }
 .accueil-text-accroche p {
-color: var(--header-text-color);
+color: var(--text-color);
 font-size: 30px;
 text-align: right;
 }
@@ -114,18 +127,19 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-color: var(--header-text-color);
+color: var(--text-color);
 margin-top: 100px;
 margin-bottom: 60px;
 } 
 .accueil-text-presentation {
   text-align: justify;
-  font-size: 20px;
+  font-size: var(--text-courant);
+  line-height: var(--line-height);
   width: 80%;
 }
 .accueil-text-presentation h3 {
   text-align: center;
-  font-size: 20px;
+  font-size: var(--text-courant);
 }
 .accueil-qui {
   display: flex;
@@ -134,9 +148,10 @@ margin-bottom: 60px;
 .accueil-qui-text {
  display: flex;
 flex-direction: column;
- color: var(--header-text-color);
+ color: var(--text-color);
  width: 60%;
  font-size: 20px;
+ line-height: var(--line-height);
 }
 .logos-hypnose{
   display: flex;
@@ -158,26 +173,26 @@ padding-left: 10px;
 }
 .picture-accueil img{
 display: flex;
-object-fit: cover;
+object-fit:fill;
 width: 100%;
 border-radius: 10px;
 box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
 }
-.accueil-contact {
-  color: var(--header-text-color);
+.container-footer {
+  color: var(--text-color);
   display: flex;
   margin: 100px 0;
-  height: 30vh; 
+  height: auto; 
   position: relative;
 
 }
-.accueil-contact-presentation {
+.footer-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  width: 60%;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--bloc-bg-color-20);
@@ -187,6 +202,36 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
 .presentation {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
+}
+.presentation-hypnose{
+  display: flex;
+  align-items: center;
+}
+.presentation-hypnose-text{
+  color: var(--text-color);
+  text-align: justify;
+  line-height: var(--line-height);
+  font-size: var(--text-courant);
+  width: 60%;
+}
+.presentation-hypnose-gif{
+width: 40%;
+margin-left: 30px;
+}
+.presentation-hypnose-gif img{
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+.presentation-remarque{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  margin-top: 50px;
+  font-size: 18px;
 }
 
 /* THERAPIES TARIFS */
@@ -194,7 +239,7 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
   display: flex;
   flex-direction:column;
   align-items: center;
-  
+
 }
 .tarifs-blocs, .therapies-blocs{
   display: flex;
@@ -210,7 +255,7 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
   width: 200px;
   min-height: 450px;
   border-radius: 10px;
- 
+
 }
 .tarif-titre, .therapie-titre {
   display: flex;
@@ -232,9 +277,6 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
 .tarif-infos{
   min-height: 80px;
 }
-
-
-
 /* CONTACT */
 
 .container-contact {
@@ -242,15 +284,12 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
   align-items: center;
   justify-content: space-around;
 }
-
 .infos-contact {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
   width: 70%;
 }
-
 .container-contact-formulary {
   display: flex;
   flex-direction: column;
@@ -263,13 +302,11 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
   width: 300px;
   box-sizing: border-box;
 }
-
 .contact-formulary input,
 .contact-formulary textarea {
   padding: 5px;
   border-radius: 5px;
   margin: 10px 0;
-
   border: 2px solid rgba(102, 51, 153, 0.788);
   box-sizing: border-box;
 }
