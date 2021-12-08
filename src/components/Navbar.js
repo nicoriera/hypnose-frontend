@@ -36,7 +36,7 @@ const Navbar = () => {
           </Link>
         </li>
          <li>
-          <Link className="link" to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
+          <Link className="link-bold" to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
             Prendre rendez-vous
           </Link>
         </li>

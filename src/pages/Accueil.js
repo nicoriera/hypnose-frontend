@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Consultation from "../assets/pictures/fond_accueil.jpg";
 import LogoPsynapse from "../assets/pictures/logo_psynapse.png"
 import LogoWho from "../assets/pictures/logo_who.png"
+import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg"
 
 import Map from "../components/Map"
 
@@ -19,11 +20,8 @@ const Accueil = () => {
             </h2>
             <p >Tom Peters</p>
           </div>
-         
         </div>
-
-      
-          <div className="accueil-text">
+        <div className="accueil-text">
             <div className="accueil-text-presentation">
             <h3>Comment l'hypnose peut vous aider ?</h3>
             <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
@@ -37,6 +35,34 @@ const Accueil = () => {
             <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
               <button className="button-contact">Prendre rendez-vous</button>
             </Link>
+        </div>
+        <div className="accueil-qui">
+          <div className="accueil-qui-text">
+            <h3>Qui suis-je ?</h3>
+            <ul>
+              <li>Certifié praticien en hypnose Ericksonienne par l’école de psychotéraphie Psynapse</li>
+              <li>Spécialisé en gestion de poids et arrêt du tabac</li>
+              <li>Certifié technicien en PNL (programmation neuro-linguistique)</li>
+              <li>Reconnu par la FFHTB (Fédération Française d’Hypnose et des Thérapies Brèves) et la WHO (World Hypnosis Organization)</li>
+            </ul>
+            <Link to="/qui" target="_blank">
+              <button className="button-contact">En savoir plus</button>
+            </Link>
+            <div className="logos-hypnose">
+            <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
+            <img src={LogoPsynapse} alt="logo-psynapse" />
+            </Link>
+            <Link className="logo-who" to={{ pathname: "https://www.world-hypnosis.org/fr" }} target="_blank">
+            <img src={LogoWho} alt="logo-who" />
+            </Link>
+            <Link className="logo-ffhtb" to={{ pathname: "https://psynapse.fr/certifications-hypnose-pnl/federation-francaise-hypnose-therapies-breves-ffhtb/" }} target="_blank">
+            <img src={LogoFfhtb} alt="logo-ffhtb" />
+            </Link>
+            </div>
+          </div>
+         <div className="picture-accueil">
+            <img  src={Consultation} alt="picture-accueil" />
+          </div>
           </div>
           <div className="accueil-contact">
             <div className="accueil-contact-presentation">
@@ -50,25 +76,9 @@ const Accueil = () => {
             <div>
             <Map className="container-map"/>
             </div>
-            
           </div>
-      
-
-        <div className="logos-hypnose">
-        <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
-        <img src={LogoPsynapse} alt="logo-psynapse" />
-        </Link>
-        <Link className="logo-who" to={{ pathname: "https://www.world-hypnosis.org/fr" }} target="_blank">
-        <img src={LogoWho} alt="logo-who" />
-        </Link>
-        </div>
-       
       </div>
-
-     
-     
     </div>
-
   );
 };
 
