@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
 
-// import Map from "../components/Map";
+import Map from "../components/Map";
 
 const Contact = () => {
   const form = useRef();
@@ -49,38 +49,21 @@ const Contact = () => {
       <div className="container-contact">
         <div className="infos-contact">
           <div className="info-christophe">
-            <h2>Christophe BACCOU</h2>
-            <p>
-              Formé à l’hypnose Ericksonnienne et à la PNL (Programmation Neuro
-              Linguistique) au sein de l’école de psychotéraphie Psynapse
-              (Institut Européen reconnu par le World Hypnosis Organization
-              (WHO)), je suis également diplômé de la spécialité gestion du
-              poids et arrêt du tabac.
-            </p>
-          </div>
-
-          <div className="info-consultation">
-            <h4>Consultations</h4>
-            <p>
-              Installé sur Hendaye au 14 boulevard Charles de Gaulle, je vous
-              reçois sur rendez-vous les lundi, mardi, mercredi, jeudi et samedi
-              matin.
-            </p>
-            <p>
-              Parking gratuit à Gaztelu Zahar (140 mètres) Bus n°3 – Arrêt Ville
-              (70 mètres) Bus n°33-35-37 – Arrêt Mairie (220 mètres)
-            </p>
-            <div>Hendaye</div>
-            <div>14 boulevard du Général de Gaulle</div>
-            <div>64700 HENDAYE</div>
-            <div>Tél. 06 xx xx xx xx</div>
-            <div>christophebaccou.hypnose@gmail.com</div>
-          </div>
-        </div>
-
-        <div className="container-contact-formulary">
-          <h3>Formulaire de contact</h3>
-          <Formik
+            <h2>Comment me contacter ?</h2>
+            <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifée</span></div>
+            <div className="info-christophe-contact">
+              <div><span className="bold">Téléphone : </span><span>06 XX XX XX XX</span></div>
+              <div><span className="bold">Email : </span><span>christophebaccou.hypnose@gmail.com</span></div>
+            </div>
+            <div className="info-christophe-venir">
+              <div><span className="bold">Lieu : </span><span>14 boulevard du Général de Gaulle 64700 HENDAYE </span></div>
+              <div><span className="bold">Horraires : </span><span>du lundi au vendredi de XXh à XXh et samedi matin de XXh à XXh </span></div>
+            </div>
+            <div><span className="bold">Infos : </span><span>Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres) </span></div>
+            </div>
+          <div className="container-contact-formulary">
+            <h3>Formulaire de contact</h3>
+            <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
             onSubmit={(values, { setSubmitting, resetForm }) => {
@@ -91,7 +74,7 @@ const Contact = () => {
               resetForm({ values: "" });
               sendEmail();
             }}
-          >
+            >
             {({
               values,
               errors,
@@ -165,12 +148,15 @@ const Contact = () => {
                   type="submit"
                   disabled={isSubmitting}
                 >
-                  Submit
+                  Envoyer
                 </button>
               </form>
-            )}
-          </Formik>
+              )}
+              </Formik>
+            </div>
         </div>
+  
+        <Map/>
       </div>
     </div>
   );
