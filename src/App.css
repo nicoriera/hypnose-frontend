@@ -391,4 +391,10 @@ textarea[type="textaera"] {
   .link-bold {
     font-size: 14px;
   }
+  .header-logo {
+    width: 180px;
+  }
+  .link:hover, .link-bold:hover {
+    font-size: 14px;
+  }
 }
