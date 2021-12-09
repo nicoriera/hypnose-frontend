@@ -11,6 +11,10 @@ import Presentation from "./pages/Presentation";
 import Therapies from "./pages/Therapies";
 import Contact from "./pages/Contact";
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars} from '@fortawesome/free-solid-svg-icons'
+library.add(faBars)
+
 function App() {
   return (
     <div>

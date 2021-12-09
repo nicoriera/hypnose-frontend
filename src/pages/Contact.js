@@ -155,7 +155,6 @@ const Contact = () => {
               </Formik>
             </div>
         </div>
-  
         <Map/>
       </div>
     </div>

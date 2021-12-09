@@ -30,6 +30,11 @@
 .link-mail:hover {
   font-weight: bold;
 }
+.menu-toggle{
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 20px;
+}
 
 /* HEADER */
 
@@ -302,7 +307,6 @@ margin-left: 30px;
 .container-contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   margin-top: 40px;
 }
 .infos-contact {
@@ -311,14 +315,14 @@ margin-left: 30px;
   width: 70%;
 }
 .info-christophe{
-  font-size: var(--text-courant);
+  font-size: 16px;
   line-height: var(--line-height);
 }
 .info-christophe-contact{
-margin-top: 30px;
+margin-top: 15px;
 }
 .info-christophe-venir{
-  margin: 30px 0 30px 0;
+  margin: 15px 0 15px 0;
 }
 .container-contact-formulary {
   display: flex;
@@ -367,3 +371,24 @@ textarea[type="textaera"] {
   color: red;
 }
 
+/* MEDIA QUERY */
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .menu li {
+    font-size: 12px;
+  }
+  .link-bold {
+    font-size: 14px;
+  }
+}

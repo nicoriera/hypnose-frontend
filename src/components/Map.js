@@ -1,19 +1,24 @@
 import React, {Component} from "react";
 import { Map, GoogleApiWrapper, InfoWindow, Marker} from 'google-maps-react';
 
-const mapStyles = {
-  width: '30%',
+const style = {
+  width: '100%',
   height: '100%',
   borderRadius: "10px",
   marginLeft: '20px',
 };
+const containerStyle = {
+  position: 'absolute',  
+  width: '30%',
+  height: '60%',
+}
 export class MapContainer extends Component {
    state = {
     showingInfoWindow: false,  // Hides or shows the InfoWindow
     activeMarker: {},          // Shows the active marker upon click
     selectedPlace: {}          // Shows the InfoWindow to the selected place upon a marker
   };
-   onMarkerClick = (props, marker, e) =>
+   onMouseoverMarker = (props, marker, e) =>
     this.setState({
       selectedPlace: props,
       activeMarker: marker,
@@ -33,7 +38,8 @@ export class MapContainer extends Component {
     <Map
         google={this.props.google}
         zoom={17}
-        style={mapStyles}
+        style={style}
+        containerStyle={containerStyle}
         initialCenter={
           {
             lat: 43.3592,
@@ -42,8 +48,8 @@ export class MapContainer extends Component {
         }
       >
       <Marker
-          onClick={this.onMarkerClick}
-          name={'Hypnothérapeute - Christphe Baccou'}
+          onMouseover={this.onMouseoverMarker}
+          name={'Hypnothérapeute - Christophe Baccou'}
       />
         <InfoWindow
           marker={this.state.activeMarker}

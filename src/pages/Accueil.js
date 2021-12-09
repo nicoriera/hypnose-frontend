@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 // PICTURES
 import Consultation from "../assets/pictures/fond_accueil.jpg";
-import LogoPsynapse from "../assets/pictures/logo_psynapse.png"
-import LogoWho from "../assets/pictures/logo_who.png"
-import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg"
+import LogoPsynapse from "../assets/pictures/logo_psynapse.png";
+import LogoWho from "../assets/pictures/logo_who.png";
+import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg";
 
 
 
