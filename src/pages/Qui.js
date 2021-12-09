@@ -1,5 +1,6 @@
 import React from "react";
 
+import Footer from "../components/Footer";
 const Qui = () => {
   return (
     <div className="container">
@@ -27,8 +28,8 @@ const Qui = () => {
         Parking gratuit à Gaztelu Zahar (140 mètres) Bus n°3 – Arrêt Ville (70
         mètres) Bus n°33-35-37 – Arrêt Mairie (220 mètres)
       </p>
-    </div>
-    
+        <Footer/>
+      </div>
     </div>
   );
 };

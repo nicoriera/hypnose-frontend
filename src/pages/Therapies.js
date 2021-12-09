@@ -1,5 +1,7 @@
 import React from "react";
 
+import Footer from "../components/Footer";
+
 import Tarif from "../components/Tarif";
 import Rdv from "../components/Rdv";
 import Forfait from "../components/Forfait";
@@ -10,8 +12,8 @@ import Depassement from "../components/Depassement"
 const Therapies = () => {
   return (
   <div className="container">
-  <div className="container-blocs">
-  <div className="container-tarifs">
+    <div className="container-blocs">
+      <div className="container-tarifs">
       <h2>Tarifs</h2>
       <div className="tarifs-blocs">
         <Rdv
@@ -62,10 +64,10 @@ const Therapies = () => {
         color="lightpink"
         />
       </div>
-    </div>
-    <div className="container-therapies">
-    <h2>Thérapies</h2>
-    <div className="therapies-blocs">
+      </div>
+      <div className="container-therapies">
+      <h2>Thérapies</h2>
+      <div className="therapies-blocs">
      <Psycho
         therapie="Troubles psychologiques / émotionnels"
         trouble1="Confiance en soi / estime de soi"
@@ -105,6 +107,7 @@ const Therapies = () => {
       />
       </div>
     </div>
+      <Footer/>
   </div>
    </div>
 

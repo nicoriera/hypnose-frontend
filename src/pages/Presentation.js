@@ -2,6 +2,8 @@ import React from "react";
 
 import Vagues from "../assets/pictures/vague.gif"
 
+import Footer from "../components/Footer";
+
 const Presentation = () => {
   return (
   <div className="container">
@@ -37,7 +39,9 @@ const Presentation = () => {
           prescrit par votre médecin, parlez-en avec lui.
           </p>
       </div>
+      <Footer/>
     </div>
+    
   </div>
   );
 };

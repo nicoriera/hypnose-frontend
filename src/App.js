@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 import Accueil from "./pages/Accueil";
 import Qui from "./pages/Qui";
@@ -42,7 +41,6 @@ function App() {
             </Route>
           </Switch>
         </div>
-        <Footer/>
       </Router>
     </div>
   );

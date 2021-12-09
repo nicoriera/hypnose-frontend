@@ -2,14 +2,16 @@ import React from "react";
 
 import Spiral from "../assets/pictures/spirale.jpg"
 
+import Footer from "../components/Footer";
 const Seance = () => {
   return (
     <div className="container">
+    <div>
       <div className="seance">
          <div className="seance-image">
           <img src={Spiral} alt="seance-hypnose"/>
-        </div>
-        <div className="seance-textes">
+          </div>
+          <div className="seance-textes">
           <h2>Comment se déroule une séance ?</h2>
           <p>
           Contrairement à ce que laisse penser l’hypnose de spectacle, l’état
@@ -51,6 +53,9 @@ const Seance = () => {
           </p>
         </div>
       </div>
+      <Footer/>
+    </div>
+      
     </div>
   );
 };

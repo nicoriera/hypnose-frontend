@@ -233,6 +233,7 @@ margin-left: 30px;
   display: flex;
   flex-direction: row;
   margin-top: 40px;
+  height: 60%;
 }
 .seance-textes{
   width: 80%;
@@ -371,7 +372,7 @@ textarea[type="textaera"] {
   color: red;
 }
 
-/* MEDIA QUERY */
+/* MEDIA QUERRY */
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
