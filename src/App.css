@@ -137,7 +137,7 @@ h2 {
 }
 .accueil-qui {
   display: flex;
-  margin-top: 30px;
+  margin: 30px 0 30px 0;
 }
 .accueil-qui-text {
  display: flex;
@@ -229,7 +229,7 @@ margin-left: 30px;
 .seance{
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  margin-top: 80px;
   height: 60%;
 }
 .seance-textes{
@@ -251,8 +251,23 @@ margin-left: 30px;
 }
 
 /* QUI */
+.qui {
+  display: flex;
+}
 .qui-textes{
   margin-top: 40px;
+  width: 70%;
+  text-align: justify;
+}
+.picture-qui{
+  margin: 80px 0 0 40px;
+}
+.picture-qui img{
+  margin-top: 40px;
+  height: 40%;
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
 }
 /* THERAPIES TARIFS */
 .container-blocs{

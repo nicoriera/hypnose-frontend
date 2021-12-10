@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // PICTURES
-import Consultation from "../assets/pictures/fond_accueil.jpg";
 import LogoPsynapse from "../assets/pictures/logo_psynapse.png";
 import LogoWho from "../assets/pictures/logo_who.png";
 import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg";
-
+import PictureProfil from "../assets/pictures/picture_profil.JPG"
 
 
 
@@ -23,22 +22,22 @@ const Accueil = () => {
         </div>
         <div className="container-accueil">
         <div>
-        <div className="accueil-text">
-          <div className="accueil-text-presentation">
-            <h2>Comment l'hypnose peut vous aider ?</h2>
-            <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
+          <div className="accueil-text">
+            <div className="accueil-text-presentation">
+              <h2>Comment l'hypnose peut vous aider ?</h2>
+              <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
               écho en vous. Une très grande majorité de nos maux sont installés
               ou maintenus par la partie consciente de notre cerveau. L’état
               d’hypnose, en laissant intervenir notre partie inconsciente, va
               nous permettre de trouver des solutions pour reprendre le contrôle
               sur nos vies. Vous avez déjà, sans le savoir, fait une partie du
               chemin. Continuons cette route ensemble.</p>
-          </div>
+            </div>
             <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
               <button className="button-contact">Prendre rendez-vous</button>
             </Link>
-            </div>
-            <div className="accueil-qui">
+          </div>
+          <div className="accueil-qui">
             <div className="accueil-qui-text">
             <div></div>
             <h2>Qui suis-je ?</h2>
@@ -64,7 +63,7 @@ const Accueil = () => {
             </div>
             </div>
             <div className="picture-accueil">
-            <img  src={Consultation} alt="accueil" />
+            <img  src={PictureProfil} alt="accueil" />
             </div>
           </div>
         </div>
