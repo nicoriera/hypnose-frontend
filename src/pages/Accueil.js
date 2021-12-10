@@ -17,7 +17,7 @@ const Accueil = () => {
         <div  className="accueil-accroche">
           <div className="accueil-text-accroche">
             <h2 className="accueil-text-accroche-citation">
-              « Le changement est une porte qui ne s’ouvre que de l’intérieur »
+              « Le changement est une porte qui s'ouvre que de l’intérieur »
             </h2>
             <p >Tom Peters</p>
           </div>
