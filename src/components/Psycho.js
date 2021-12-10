@@ -5,7 +5,7 @@ const Psycho = (props) => {
     <div>
       <div className="bloc-info" style={{ backgroundColor: props.color }}>
         <div>
-          <h3 className="therapie-titre">{props.therapie}</h3>
+          <h4 className="therapie-titre">{props.therapie}</h4>
         </div>
         <ul>
         <li>{props.trouble1}</li>

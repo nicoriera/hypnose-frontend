@@ -5,7 +5,7 @@ const Tarif = (props) => {
     <div>
       <div className="bloc-info" style={{ backgroundColor: props.color }}>
         <div>
-          <h3 className="tarif-titre">{props.tarif}</h3>
+          <h4 className="tarif-titre">{props.tarif}</h4>
           <ul>
             <li>{props.etudiant}</li>
             <li>{props.demandeur}</li>

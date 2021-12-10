@@ -5,7 +5,7 @@ const Rdv = (props) => {
     <div>
       <div className="bloc-info" style={{ backgroundColor: props.color }}>
         <div>
-          <h3 className="tarif-titre">{props.rdv}</h3>
+          <h4 className="tarif-titre">{props.rdv}</h4>
           <span>{props.age}</span>
         </div>
         <p className="tarif-infos">{props.infos}</p>

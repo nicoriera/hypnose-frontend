@@ -3,30 +3,31 @@
   --bloc-bg-color: rgb(17, 131,  54);
   --bloc-bg-color-20: rgba(17, 131,  54, 0.123);
   --border-border-color: rgb(17, 131,  54);
+  --text-color:rgb(17, 131,  54);
   --shadow: 0 4px 4px hsl(0deg 0% 0% / 0.1);
   --text-courant: 16px;
-  --text-color: rgb(0, 0, 0);;
   --line-height: 30px;
 }
-
+h2 {
+  font-size: 42px;
+  margin: 2em 0 0.5em 0;
+}
 .site-container {
   padding: 0 80px;
-  background-color: var(--main-bg-color);
   max-height: 100%;
   max-width: 100%;
   margin-top: 20px;
-  overflow-x: hidden;
+
 }
 .container {
   display: flex;
-  margin-top: 80px;
+  margin-top: 100px;
+  padding: 0 80px;
+  max-height: 100%;
+  max-width: 100%;
   }
 .bold {
   font-weight: bold;
-}
-.link-mail {
-  text-decoration: none;
-  background-color: none;
 }
 .link-mail:hover {
   font-weight: bold;
@@ -54,7 +55,7 @@
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 .header-logo {
-  width: 220px;
+  width: 280px;
   margin: 10px 0;
 }
 .menu {
@@ -66,29 +67,22 @@
   display: flex;
   margin: 5px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 13px;
 }
 .link {
   text-decoration: none;
   background-color: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0 5px 0 5px;
 }
 .link-bold {
   text-decoration: none;
   background-color: none;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: var(--text-courant);
+  font-size: 15px;
   font-weight: bold;
 }
 .link:hover, .link-bold:hover {
-  color: white;
-  background-color: var(--bloc-bg-color);
-  padding: 10px;
-  border-radius: 5px;
+  color: var(--text-color);
   font-weight: bold;
-  font-size: 18px;
 }
 .link-home {
   text-decoration: none;
@@ -99,28 +93,32 @@
 .accueil {
 display: flex;
 flex-direction: column;
-margin-top: 40px;
 }
 .accueil-accroche {
-display: flex;
-height: 30vh;
-align-items: center;
-justify-content: center;
+  display: flex;
+  background: fixed;
+  background-image: url("./assets/pictures/fond_accueil.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ align-items: center;
+ justify-content: center;
+
 }
 .accueil-text-accroche {
 display: flex;
 flex-direction: column;
-width: 70%;
-
+width: 60%;
 }
 .accueil-text-accroche-citation {
-font-size: 50px;
-text-align: justify;
+font-size: 55px;
 }
 .accueil-text-accroche p {
 font-size: 30px;
 text-align: right;
 }
+
 .accueil-text {
 display: flex;
 flex-direction: column;
@@ -135,7 +133,7 @@ margin-bottom: 60px;
   line-height: var(--line-height);
   width: 80%;
 }
-.accueil-text-presentation h3 {
+.accueil-text-presentation h2 {
   text-align: center;
 }
 .accueil-qui {

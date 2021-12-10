@@ -12,7 +12,7 @@ import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg";
 
 const Accueil = () => {
   return (
-    <div className="container">
+    <div>
       <div className="accueil">
         <div  className="accueil-accroche">
           <div className="accueil-text-accroche">
@@ -22,9 +22,11 @@ const Accueil = () => {
             <p >Tom Peters</p>
           </div>
         </div>
+        <div className="container">
+        <div>
         <div className="accueil-text">
             <div className="accueil-text-presentation">
-            <h3>Comment l'hypnose peut vous aider ?</h3>
+            <h2>Comment l'hypnose peut vous aider ?</h2>
             <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
               écho en vous. Une très grande majorité de nos maux sont installés
               ou maintenus par la partie consciente de notre cerveau. L’état
@@ -36,10 +38,11 @@ const Accueil = () => {
             <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
               <button className="button-contact">Prendre rendez-vous</button>
             </Link>
-        </div>
-        <div className="accueil-qui">
-          <div className="accueil-qui-text">
-            <h3>Qui suis-je ?</h3>
+            </div>
+            <div className="accueil-qui">
+            <div className="accueil-qui-text">
+            <div></div>
+            <h2>Qui suis-je ?</h2>
             <ul>
               <li>Certifié praticien en hypnose Ericksonienne par l’école de psychotéraphie Psynapse</li>
               <li>Spécialisé en gestion de poids et arrêt du tabac</li>
@@ -60,11 +63,15 @@ const Accueil = () => {
             <img src={LogoFfhtb} alt="logo-ffhtb" />
             </Link>
             </div>
-          </div>
-         <div className="picture-accueil">
+            </div>
+            <div className="picture-accueil">
             <img  src={Consultation} alt="accueil" />
+            </div>
           </div>
-          </div>
+        </div>
+          
+        </div>
+        
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ const Forfait = (props) => {
     <div>
       <div className="bloc-info" style={{ backgroundColor: props.color }}>
         <div className="tarif-titre">
-          <h3>{props.forfait}</h3>
+          <h4>{props.forfait}</h4>
         </div>
         <p className="tarif-infos">{props.infos}</p>
 

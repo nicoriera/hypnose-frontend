@@ -30,7 +30,7 @@ const Presentation = () => {
         </div>
       </div>
       <div className="presentation-remarque">
-          <h4>Remarque</h4>
+          <h3>Remarque</h3>
           <p>
           Une séance d'hypnose ne remplace en aucune manière un avis ou un
           traitement médical. Seul un médecin peut poser des diagnostics et lui

@@ -19,7 +19,7 @@ function App() {
     <div>
       <Router>
         <Header />
-        <div className="site-container">
+        <div>
           <Switch>
             <Route path="/contact">
               <Contact />
