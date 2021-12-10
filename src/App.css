@@ -25,7 +25,7 @@ h2 {
   padding: 0 80px;
   max-height: 100%;
   max-width: 100%;
-  }
+}
 .bold {
   font-weight: bold;
 }
@@ -90,10 +90,6 @@ h2 {
 
 /* ACCUEIL */
 
-.accueil {
-display: flex;
-flex-direction: column;
-}
 .accueil-accroche {
   display: flex;
   background: fixed;
@@ -104,28 +100,31 @@ flex-direction: column;
   background-size: cover;
  align-items: center;
  justify-content: center;
-
+}
+.container-accueil {
+  display: flex;
+  padding: 0 80px;
+  max-height: 100%;
+  max-width: 100%;
 }
 .accueil-text-accroche {
-display: flex;
-flex-direction: column;
-width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 .accueil-text-accroche-citation {
-font-size: 55px;
+  font-size: 55px;
 }
 .accueil-text-accroche p {
-font-size: 30px;
-text-align: right;
+  font-size: 30px;
+  text-align: right;
 }
-
 .accueil-text {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-top: 100px;
-margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 } 
 .accueil-text-presentation {
   text-align: justify;

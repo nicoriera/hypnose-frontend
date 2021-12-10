@@ -13,7 +13,6 @@ import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg";
 const Accueil = () => {
   return (
     <div>
-      <div className="accueil">
         <div  className="accueil-accroche">
           <div className="accueil-text-accroche">
             <h2 className="accueil-text-accroche-citation">
@@ -22,10 +21,10 @@ const Accueil = () => {
             <p >Tom Peters</p>
           </div>
         </div>
-        <div className="container">
+        <div className="container-accueil">
         <div>
         <div className="accueil-text">
-            <div className="accueil-text-presentation">
+          <div className="accueil-text-presentation">
             <h2>Comment l'hypnose peut vous aider ?</h2>
             <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
               écho en vous. Une très grande majorité de nos maux sont installés
@@ -34,7 +33,7 @@ const Accueil = () => {
               nous permettre de trouver des solutions pour reprendre le contrôle
               sur nos vies. Vous avez déjà, sans le savoir, fait une partie du
               chemin. Continuons cette route ensemble.</p>
-            </div>
+          </div>
             <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
               <button className="button-contact">Prendre rendez-vous</button>
             </Link>
@@ -69,9 +68,6 @@ const Accueil = () => {
             </div>
           </div>
         </div>
-          
-        </div>
-        
       </div>
     </div>
   );
