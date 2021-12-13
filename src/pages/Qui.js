@@ -4,8 +4,9 @@ import Footer from "../components/Footer";
 const Qui = () => {
   return (
   <div className="container">
-    <div className="qui">
-      <div className="qui-textes">
+    <div className="container-qui">
+      <div className="qui">
+        <div className="qui-textes">
         <h2>Votre hypnothérapeute</h2>
         <p>
         Le mystère qui entoure le fonctionnement du cerveau a toujours attiré ma
@@ -29,9 +30,13 @@ const Qui = () => {
         Parking gratuit à Gaztelu Zahar (140 mètres) Bus n°3 – Arrêt Ville (70
         mètres) Bus n°33-35-37 – Arrêt Mairie (220 mètres)
         </p>
-      </div>
-      <div className="picture-qui">
+        </div>
+        <div className="picture-qui">
         <img  src={PictureProfil} alt="accueil" />
+        </div>
+      </div>
+      <div>
+      <Footer/>
       </div>
     </div>
   </div>
