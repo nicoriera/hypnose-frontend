@@ -388,6 +388,9 @@ textarea[type="textaera"] {
   .menu-toggle {
     display: none;
   }
+  .logo-cross{
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .menu {
@@ -434,7 +437,6 @@ textarea[type="textaera"] {
     color: var(--text-color);
   }
   .logo-cross{
-    
     margin: 5px;
   }
   .qui {
