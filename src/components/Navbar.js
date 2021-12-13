@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navbar = () => {
+   const [sidebar, setSidebar] = useState(false)
+
+  const showSidebar = () => setSidebar(!sidebar)
+
   return (
-    <nav>
-      <ul className="menu">
+  <>
+    <nav className={sidebar ? 'nav-menu active' : 'nav-menu' }>
+      <ul className={sidebar ? 'menu active' : 'menu' }>
         <li>
           <Link className="link" to="/">
             Accueil
@@ -41,7 +46,14 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <FontAwesomeIcon  onClick={showSidebar} className="logo-cross" icon="times" />
     </nav>
+    
+    <div className="menu-toggle">
+        <p>MENU</p>
+        <FontAwesomeIcon onClick={showSidebar} className="logo-bars" icon="bars" />
+      </div>
+</>
   );
 };
 

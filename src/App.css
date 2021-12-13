@@ -253,21 +253,20 @@ margin-left: 30px;
 /* QUI */
 .qui {
   display: flex;
+  margin-top: 80px;
 }
 .qui-textes{
-  margin-top: 40px;
-  width: 70%;
+  width: 50%;
   text-align: justify;
 }
 .picture-qui{
-  margin: 80px 0 0 40px;
+  margin: 0 0 0 50px;
+  width: 50%;
 }
 .picture-qui img{
-  margin-top: 40px;
-  height: 40%;
-  width: 100%;
-  border-radius: 30px;
-  object-fit: cover;
+object-fit: cover;
+height: 100%;
+border-radius: 20px;
 }
 /* THERAPIES TARIFS */
 .container-blocs{
@@ -390,10 +389,72 @@ textarea[type="textaera"] {
     display: none;
   }
 }
-
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
+  }
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid var(--bloc-bg-color);
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+  }
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .menu-toggle p{
+    margin: 0 10px 0 0;
+  }
+  .nav-menu {
+    width: 50%;
+    height: auto;
+    padding: 10%;
+    display: flex;
+    top: 20vh;
+    left: -100%;
+    position: fixed;
+    transition: 850ms;
+  }
+  .nav-menu.active {
+    left: 10vw;
+    transition: 850ms;
+  }
+  .link {
+    padding: none;
+  }
+  .logo-bars{
+    cursor: pointer;
+  }
+  .logo-bars:hover{
+    color: var(--text-color);
+  }
+  .logo-cross{
+    
+    margin: 5px;
+  }
+  .qui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .qui-textes{
+  width: 100%;
+  
+  }
+  .picture-qui{
+  width: 100%;
+ margin: 20px 0 0 0;
+  }
+  .picture-qui img{
+  object-fit: cover;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
   }
 }
 
