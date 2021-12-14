@@ -393,6 +393,20 @@ textarea[type="textaera"] {
   }
 }
 @media screen and (max-width: 768px) {
+  .site-container {
+    padding: 0 10px;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  
+  }
+  .container {
+    display: flex;
+    margin-top: 20px;
+    padding: 0 10px;
+    max-height: 100%;
+    max-width: 100%;
+  }
  /* HEADER  */
   .menu {
     display: none;
