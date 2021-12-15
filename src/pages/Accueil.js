@@ -10,7 +10,7 @@ import LogoWho from "../assets/pictures/logo_who.png";
 import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg";
 import PictureProfil from "../assets/pictures/picture_profil.JPG"
 
-
+import Button from "../components/Button"
 
 const Accueil = () => {
   const form = useRef();
@@ -89,7 +89,8 @@ const Accueil = () => {
                   <li>Reconnu par la FFHTB (Fédération Française d’Hypnose et des Thérapies Brèves) et la WHO (World Hypnosis Organization)</li>
                 </ul>
                 <Link to="/qui" target="_blank">
-                  <button className="button-contact">En savoir plus</button>
+                  <button className="button-link">En savoir plus</button>
+                  <Button/>
                 </Link>
               </div>
               <div className="picture-accueil">
@@ -98,6 +99,7 @@ const Accueil = () => {
             </div>
               
             <div className="logos-hypnose">
+              <p>Certifications reconnues :</p>
               <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
               <img src={LogoPsynapse} alt="logo-psynapse" />
               </Link>
