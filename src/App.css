@@ -55,7 +55,7 @@ h2 {
   border-radius: 10px;
   background-color: var(--bloc-bg-color-20);
 }
-.button-link {
+.button-link, .button-contact {
   margin-top: 10px;
   background-color: var(--bloc-bg-color);
   border: 2px solid var(--bloc-bg-color);
@@ -67,7 +67,7 @@ h2 {
   font-family: inherit;
   font-size: 16px;
 }
-.button-link:hover {
+.button-link:hover, .button-contact:hover {
   background-color: white;
   border: 2px solid var(--bloc-bg-color);
   color: var(--bloc-bg-color);
@@ -133,8 +133,8 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .container-accueil {
   display: flex;
@@ -220,8 +220,7 @@ box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
 }
 .accueil-container-contact {
   display: flex;
-  padding: 0 80px;
-  height: 90vh;
+  height: 80vh;
   align-items: center;
 }
 .accueil-infos-contact {
@@ -496,7 +495,13 @@ textarea[type="textaera"] {
   margin-right: 20px;
   }
   /* ACCUEIL */
-  
+  .accueil-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  } 
   .accueil-text-accroche-citation {
     font-size: 30px;
   }
@@ -518,8 +523,7 @@ textarea[type="textaera"] {
     display: flex;
     flex-direction: column;
     height: 90vh;
-    margin: 50px 0 30px 0;
-    border: 1px solid beige;
+    margin: 50px 0 0 0;
   }
   .accueil-text-qui{
     display: flex;
@@ -538,18 +542,36 @@ textarea[type="textaera"] {
   .logos-hypnose{
     display: flex;
     flex-direction: column;
-    height: auto;
     align-items: center;
   }
-  .logo-psynapse, .logo-who, .logo-ffhtb
-  {
-    width: 20vw;
+  .logo-psynapse, .logo-who, .logo-ffhtb {
+    width: 15vw;
+    height: 15vh;
     margin:  20px 0;
   }
   .picture-accueil{
     width: 100%;
     padding-left: 0;
     margin-top: 50px;
+  }
+  .accueil-container-contact {
+    display: flex;
+    padding: 0 ;
+    height: 100%;
+    align-items: center;
+  }
+  .accueil-infos-contact {
+    display: flex;
+  }
+  .accueil-info-christophe {
+  width: 100%;
+  }
+  .accueil-container-contact-formulary{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   }
 
   /* QUI */

@@ -10,6 +10,7 @@ import LogoWho from "../assets/pictures/logo_who.png";
 import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg";
 import PictureProfil from "../assets/pictures/picture_profil.JPG"
 
+// COMPONENTS
 import Button from "../components/Button"
 
 const Accueil = () => {
@@ -53,17 +54,17 @@ const Accueil = () => {
   
   return (
     <div>
-        <div  className="accueil-accroche">
+      <div  className="accueil-accroche">
           <div className="accueil-text-accroche">
             <h2 className="accueil-text-accroche-citation">
               « Le changement est une porte qui s'ouvre que de l’intérieur »
             </h2>
             <p >Tom Peters</p>
           </div>
-        </div>
-        <div className="container-accueil">
+      </div>
+      <div className="container-accueil">
         <div>
-          <div className="accueil-text">
+            <div className="accueil-text">
             <div className="accueil-text-presentation">
               <h2>Comment l'hypnose peut vous aider ?</h2>
               <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
@@ -75,10 +76,10 @@ const Accueil = () => {
               chemin. Continuons cette route ensemble.</p>
             </div>
             <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
-              <button className="button-contact">Prendre rendez-vous</button>
+              <Button text="Prendre rendez-vous"/>
             </Link>
-          </div>
-          <div className="accueil-qui">
+            </div>
+            <div className="accueil-qui">
             <div className="accueil-text-qui">
               <div className="accueil-qui-text">
                 <h2>Qui suis-je ?</h2>
@@ -89,8 +90,7 @@ const Accueil = () => {
                   <li>Reconnu par la FFHTB (Fédération Française d’Hypnose et des Thérapies Brèves) et la WHO (World Hypnosis Organization)</li>
                 </ul>
                 <Link to="/qui" target="_blank">
-                  <button className="button-link">En savoir plus</button>
-                  <Button/>
+                  <Button text="En savoir plus"/>
                 </Link>
               </div>
               <div className="picture-accueil">
@@ -111,11 +111,9 @@ const Accueil = () => {
               </Link>
             </div>
           </div>
-            
-        </div>
-      </div>
-      <div className="accueil-container-contact">
-        <div className="accueil-infos-contact">
+
+            <div className="accueil-container-contact">
+          <div className="accueil-infos-contact">
           <div className="accueil-info-christophe">
             <h2>Comment me contacter ?</h2>
             <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifée</span></div>
@@ -222,9 +220,11 @@ const Accueil = () => {
               )}
               </Formik>
             </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+  </div>
   );
 };
 
