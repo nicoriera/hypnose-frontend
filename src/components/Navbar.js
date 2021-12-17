@@ -17,12 +17,12 @@ const Navbar = () => {
         </li>
         <li>
           <Link className="link" to="/presentation">
-            L’hypnose, c’est quoi ?
+            L’hypnose, c’est quoi ?
           </Link>
         </li>
         <li>
           <Link className="link" to="/seance">
-            Comment se déroule une séance ?
+            Comment se déroule une séance ?
           </Link>
         </li>
         <li>

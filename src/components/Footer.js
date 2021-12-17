@@ -8,7 +8,7 @@ const Footer = () => {
             <div>Hendaye</div>
             <div>14 boulevard du Général de Gaulle</div>
             <div>64700 HENDAYE</div>
-            <div>Tél. 06 xx xx xx xx</div>
+            <div>Tél. : 06 37 66 52 97</div>
             <div>
             <a className="link-mail" href="mailto:christophebaccou.hypnose@gmail.com">christophebaccou.hypnose@gmail.com</a>
             </div>

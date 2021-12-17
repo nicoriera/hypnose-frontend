@@ -57,7 +57,7 @@ const Accueil = () => {
       <div  className="accueil-accroche">
           <div className="accueil-text-accroche">
             <h2 className="accueil-text-accroche-citation">
-              « Le changement est une porte qui s'ouvre que de l’intérieur »
+              « Le changement est une porte qui s'ouvre de l’intérieur »
             </h2>
             <p >Tom Peters</p>
           </div>
@@ -164,7 +164,6 @@ const Accueil = () => {
                   onBlur={handleBlur}
                   value={values.nom}
                   placeholder="Votre nom"
-                  autoFocus={true}
                 />
                 <div className="error">
                   {errors.nom && touched.nom && errors.nom}
