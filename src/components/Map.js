@@ -2,15 +2,15 @@ import React, {Component} from "react";
 import { Map, GoogleApiWrapper, InfoWindow, Marker} from 'google-maps-react';
 
 const style = {
-  width: '100%',
-  height: '100%',
+  width: '50%',
+  height: '60%',
   borderRadius: "10px",
-  marginLeft: '20px',
+  marginTop: "20px",
 };
 const containerStyle = {
   position: 'absolute',  
-  width: '30%',
-  height: '60%',
+  width: '100%',
+  height: '100%',
 }
 export class MapContainer extends Component {
    state = {

@@ -115,17 +115,17 @@ const Accueil = () => {
             <div className="accueil-container-contact">
           <div className="accueil-infos-contact">
           <div className="accueil-info-christophe">
-            <h2>Comment me contacter ?</h2>
+            <h2>Comment me contacter ?</h2>
             <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifée</span></div>
             <div className="info-christophe-contact">
-              <div><span className="bold">Téléphone : </span><span>06 XX XX XX XX</span></div>
-              <div><span className="bold">Email : </span><span>christophebaccou.hypnose@gmail.com</span></div>
+              <div><span className="bold">Téléphone : </span><span>06 37 66 52 97</span></div>
+              <div><span className="bold">Email : </span><span>christophebaccou.hypnose@gmail.com</span></div>
             </div>
             <div className="info-christophe-venir">
-              <div><span className="bold">Lieu : </span><span>14 boulevard du Général de Gaulle 64700 HENDAYE </span></div>
-              <div><span className="bold">Horraires : </span><span>du lundi au vendredi de XXh à XXh et samedi matin de XXh à XXh </span></div>
+              <div><span className="bold">Lieu : </span><span>14 boulevard du Général de Gaulle 64700 HENDAYE </span></div>
+              <div><span className="bold">Horaires : </span><span>du lundi au vendredi de XXh à XXh et samedi matin de XXh à XXh </span></div>
             </div>
-            <div><span className="bold">Infos : </span><span>Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres) </span></div>
+            <div><span className="bold">Infos : </span><span>Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres) </span></div>
             </div>
           <div className="accueil-container-contact-formulary">
             <h3>Formulaire de contact</h3>

@@ -32,10 +32,10 @@ const Presentation = () => {
       <div className="presentation-remarque">
           <h3>Remarque</h3>
           <p>
-          Une séance d'hypnose ne remplace en aucune manière un avis ou un
+          Une séance d'hypnose ne remplace en aucune manière un avis ou un
           traitement médical. Seul un médecin peut poser des diagnostics et lui
           seul est habilité à prescrire, modifier ou supprimer un traitement
-          médical. L'hypnose peut vous accompagner lors de votre traitement
+          médical. L'hypnose peut vous accompagner lors de votre traitement
           prescrit par votre médecin, parlez-en avec lui.
           </p>
       </div>
