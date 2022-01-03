@@ -65,52 +65,70 @@ const Accueil = () => {
       <div className="container-accueil">
         <div>
             <div className="accueil-text">
-            <div className="accueil-text-presentation">
-              <h2>Comment l'hypnose peut vous aider ?</h2>
-              <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
-              écho en vous. Une très grande majorité de nos maux sont installés
-              ou maintenus par la partie consciente de notre cerveau. L’état
-              d’hypnose, en laissant intervenir notre partie inconsciente, va
-              nous permettre de trouver des solutions pour reprendre le contrôle
-              sur nos vies. Vous avez déjà, sans le savoir, fait une partie du
-              chemin. Continuons cette route ensemble.</p>
+              <div className="accueil-text-presentation">
+                <h2>Comment l'hypnose peut vous aider ?</h2>
+                <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
+                écho en vous. Une très grande majorité de nos maux sont installés
+                ou maintenus par la partie consciente de notre cerveau. L’état
+                d’hypnose, en laissant intervenir notre partie inconsciente, va
+                nous permettre de trouver des solutions pour reprendre le contrôle
+                sur nos vies. Vous avez déjà, sans le savoir, fait une partie du
+                chemin. Continuons cette route ensemble.</p>
+              </div>
+              <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
+                <Button text="Prendre rendez-vous"/>
+              </Link>
             </div>
-            <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
-              <Button text="Prendre rendez-vous"/>
-            </Link>
+            <div className="accueil-pourquoi">
+              <div>
+                <h2>Pourquoi consulter en hypnothérapie ?</h2>
+                <div className="pourquoi-blocs">
+                  <div className="pourquoi-bloc">
+                    <img src="" alt="" />
+                    <p>pourquoi 1</p>
+                  </div>
+                  <div className="pourquoi-bloc">
+                    <img src="" alt="" />
+                    <p>pourquoi 2</p>
+                  </div>
+                  <div className="pourquoi-bloc">
+                    <img src="" alt="" />
+                    <p>pourquoi 3</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="accueil-qui">
-            <div className="accueil-text-qui">
-              <div className="accueil-qui-text">
-                <h2>Qui suis-je ?</h2>
-                <ul>
-                  <li>Certifié praticien en hypnose Ericksonienne par l’école de psychotéraphie Psynapse</li>
-                  <li>Spécialisé en gestion de poids et arrêt du tabac</li>
-                  <li>Certifié technicien en PNL (programmation neuro-linguistique)</li>
-                  <li>Reconnu par la FFHTB (Fédération Française d’Hypnose et des Thérapies Brèves) et la WHO (World Hypnosis Organization)</li>
-                </ul>
-                <Link to="/qui" target="_blank">
-                  <Button text="En savoir plus"/>
+              <div className="accueil-text-qui">
+                <div className="accueil-qui-text">
+                  <h2>Qui suis-je ?</h2>
+                  <ul>
+                    <li>Certifié praticien en hypnose Ericksonienne par l’école de psychotéraphie Psynapse</li>
+                    <li>Spécialisé en gestion de poids et arrêt du tabac</li>
+                    <li>Certifié technicien en PNL (programmation neuro-linguistique)</li>
+                    <li>Reconnu par la FFHTB (Fédération Française d’Hypnose et des Thérapies Brèves) et la WHO (World Hypnosis Organization)</li>
+                  </ul>
+                  <Link to="/qui" target="_blank">
+                    <Button text="En savoir plus"/>
+                  </Link>
+                </div>
+                <div className="picture-accueil">
+                  <img  src={PictureProfil} alt="accueil" />
+                </div>
+              </div>
+              <div className="logos-hypnose">
+                <p>Certifications reconnues :</p>
+                <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
+                <img src={LogoPsynapse} alt="logo-psynapse" />
+                </Link>
+                <Link className="logo-who" to={{ pathname: "https://www.world-hypnosis.org/fr" }} target="_blank">
+                <img src={LogoWho} alt="logo-who" />
+                </Link>
+                <Link className="logo-ffhtb" to={{ pathname: "https://psynapse.fr/certifications-hypnose-pnl/federation-francaise-hypnose-therapies-breves-ffhtb/" }} target="_blank">
+                <img src={LogoFfhtb} alt="logo-ffhtb" />
                 </Link>
               </div>
-              <div className="picture-accueil">
-                <img  src={PictureProfil} alt="accueil" />
-              </div>
             </div>
-              
-            <div className="logos-hypnose">
-              <p>Certifications reconnues :</p>
-              <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
-              <img src={LogoPsynapse} alt="logo-psynapse" />
-              </Link>
-              <Link className="logo-who" to={{ pathname: "https://www.world-hypnosis.org/fr" }} target="_blank">
-              <img src={LogoWho} alt="logo-who" />
-              </Link>
-              <Link className="logo-ffhtb" to={{ pathname: "https://psynapse.fr/certifications-hypnose-pnl/federation-francaise-hypnose-therapies-breves-ffhtb/" }} target="_blank">
-              <img src={LogoFfhtb} alt="logo-ffhtb" />
-              </Link>
-            </div>
-          </div>
 
             <div className="accueil-container-contact">
           <div className="accueil-infos-contact">

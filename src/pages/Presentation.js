@@ -4,6 +4,10 @@ import Vagues from "../assets/pictures/vague.gif"
 
 import Footer from "../components/Footer";
 
+import Psycho from "../components/Psycho";
+import Comportement from "../components/Comportement"
+import Depassement from "../components/Depassement"
+
 const Presentation = () => {
   return (
   <div className="container">
@@ -11,7 +15,7 @@ const Presentation = () => {
       <div className="presentation-hypnose" >
         <div className="presentation-hypnose-text">
           <h2>L’hypnose c’est quoi ?</h2>
-         <p>
+          <p>
           L’hypnose est ce qu’on appelle scientifiquement un « état de conscience
           modifié ». C’est un état naturel que l’on expérimente au quotidien.
           Lorsqu’on lit un livre et que notre concentration s’évade, quand on
@@ -28,8 +32,8 @@ const Presentation = () => {
         <div className="presentation-hypnose-gif">
           <img src={Vagues} alt="loading..." />
         </div>
-      </div>
-      <div className="presentation-remarque">
+        </div>
+        <div className="presentation-remarque">
           <h3>Remarque</h3>
           <p>
           Une séance d'hypnose ne remplace en aucune manière un avis ou un
@@ -38,6 +42,48 @@ const Presentation = () => {
           médical. L'hypnose peut vous accompagner lors de votre traitement
           prescrit par votre médecin, parlez-en avec lui.
           </p>
+        </div>
+        <div className="container-therapies">
+        <h2>Thérapies</h2>
+        <div className="therapies-blocs">
+          <Psycho
+            therapie="Troubles psychologiques / émotionnels"
+            trouble1="Confiance en soi / estime de soi"
+            trouble2="Gestion des émotions"
+            trouble3="Anxiété / Angoisse / Attaque de panique"
+            trouble4="Stress"
+            trouble5="Burn-out"
+            trouble6="Colère"
+            trouble7="Peur"
+            trouble8="Difficultés personnelles"
+            trouble9="Traverser une épreuve : maladie, séparation, deuil"
+            trouble10="Relation difficile aux autres"
+            trouble11="Difficulté scolaire"
+            trouble12="Etc…"
+            color="lightsalmon"
+          />
+          <Comportement
+            therapie="Troubles comportementaux"
+            trouble1="Phobies"
+            trouble2="Arrêt du tabac"
+            trouble3="Compulsion alimentaire"
+            trouble4="Trouble du sommeil"
+            trouble5="Trouble sexuelle"
+            trouble6="Enurésie"
+            trouble7="Etc…"
+            color="lightsalmon"
+          />
+          <Depassement
+            therapie="Dépassement de soi"
+            trouble1="Concentration"
+            trouble2="Organisation"
+            trouble3="Performances sportives"
+            trouble4="Performances intellectuelles"
+            trouble5="Préparation mentale à un événements"
+            trouble6="Etc…"
+            color="lightyellow"
+          />
+        </div>
       </div>
       <Footer/>
     </div>

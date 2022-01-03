@@ -31,8 +31,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link className="link" to="/therapies">
-            Thérapies et tarifs
+          <Link className="link" to="/tarifs">
+            Quels sont mes tarifs ?
           </Link>
         </li>
         <li>

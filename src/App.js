@@ -7,7 +7,7 @@ import Accueil from "./pages/Accueil";
 import Qui from "./pages/Qui";
 import Seance from "./pages/Seance";
 import Presentation from "./pages/Presentation";
-import Therapies from "./pages/Therapies";
+import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -24,8 +24,8 @@ function App() {
             <Route path="/contact">
               <Contact />
             </Route>
-            <Route path="/therapies">
-              <Therapies />
+            <Route path="/tarifs">
+              <Tarifs />
             </Route>
             <Route path="/qui">
               <Qui />
