@@ -15,7 +15,7 @@ const Rdv = (props) => {
         </div>
 
         <div className="bloc-prix">
-          <span>Prix :</span>
+          <span>Prix : </span>
           <span>{props.prix}</span>
         </div>
       </div>

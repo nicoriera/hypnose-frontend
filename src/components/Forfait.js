@@ -10,7 +10,7 @@ const Forfait = (props) => {
         <p className="tarif-infos">{props.infos}</p>
 
         <div className="bloc-prix">
-          <span>Prix :</span>
+          <span>Prix : </span>
           <span>{props.prix}</span>
         </div>
       </div>
