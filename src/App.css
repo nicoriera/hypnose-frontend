@@ -349,6 +349,9 @@ border-radius: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
+.forfaits-blocs{
+  margin-top: 20px;
+}
 .bloc-info {
   display: flex;
   flex-direction: column;
@@ -373,6 +376,7 @@ border-radius: 20px;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  box-shadow: var(--shadow);
 }
 .tarif-infos{
   min-height: 80px;
@@ -386,12 +390,13 @@ flex-direction: column;
 }
 .infos-contact {
   display: flex;
-  flex-direction: column;
-  width: 70%;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 .info-christophe{
   font-size: 16px;
   line-height: var(--line-height);
+  width: 50%;
 }
 .info-christophe h2{
  margin-bottom: 50px;
