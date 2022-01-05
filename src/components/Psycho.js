@@ -3,9 +3,12 @@ import React from 'react'
 const Psycho = (props) => {
     return (
     <div>
-      <div className="bloc-info" style={{ backgroundColor: props.color }}>
+      <div className="therapies-bloc-info" style={{ backgroundColor: props.color }}>
         <div>
           <h4 className="therapie-titre">{props.therapie}</h4>
+        </div>
+        <div className="therapie-picture">
+        <img src="" alt="" />
         </div>
         <ul>
         <li>{props.trouble1}</li>

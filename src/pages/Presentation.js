@@ -60,7 +60,7 @@ const Presentation = () => {
             trouble10="Relation difficile aux autres"
             trouble11="Difficulté scolaire"
             trouble12="Etc…"
-            color="lightsalmon"
+            color="#F3F2EE"
           />
           <Comportement
             therapie="Troubles comportementaux"
@@ -71,7 +71,7 @@ const Presentation = () => {
             trouble5="Trouble sexuelle"
             trouble6="Enurésie"
             trouble7="Etc…"
-            color="lightsalmon"
+            color="#F3F2EE"
           />
           <Depassement
             therapie="Dépassement de soi"
@@ -81,7 +81,7 @@ const Presentation = () => {
             trouble4="Performances intellectuelles"
             trouble5="Préparation mentale à un événements"
             trouble6="Etc…"
-            color="lightyellow"
+            color="#F3F2EE"
           />
         </div>
       </div>
