@@ -238,6 +238,33 @@ width: 50%;
 align-items: center;
 justify-content: center;
 }
+.accueil-pourquoi{
+  height: 80vh;
+}
+.accueil-pourquoi-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.accueil-pourquoi-blocs{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+.accueil-pourquoi-bloc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+}
+.accueil-pourquoi-bloc img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 /* PRESENTATION */
 
 .presentation {
@@ -301,7 +328,6 @@ margin-left: 30px;
 .therapie-picture{
   height: 50px;
   width: 50px;
-  
 }
 /* SEANCE */
 

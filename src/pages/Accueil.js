@@ -9,9 +9,13 @@ import LogoPsynapse from "../assets/pictures/logo_psynapse.png";
 import LogoWho from "../assets/pictures/logo_who.png";
 import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg";
 import PictureProfil from "../assets/pictures/picture_profil.JPG"
+import PictureTabac from "../assets/pictures/arret_tabac.jpg"
+import PicturePhobie from "../assets/pictures/phobie.jpg"
+import PictureAlimentaire from "../assets/pictures/trouble_alimentaire.jpg"
 
 // COMPONENTS
 import Button from "../components/Button"
+import Pourquoi from "../components/Pourquoi"
 
 const Accueil = () => {
   const form = useRef();
@@ -82,20 +86,29 @@ const Accueil = () => {
             <div className="accueil-pourquoi">
               <div>
                 <h2>Pourquoi consulter en hypnothérapie ?</h2>
-                <div className="pourquoi-blocs">
-                  <div className="pourquoi-bloc">
-                    <img src="" alt="" />
-                    <p>pourquoi 1</p>
+                <div className="accueil-pourquoi-container">
+                  <div className="accueil-pourquoi-blocs">
+                    <Pourquoi 
+                    picture={PictureTabac}
+                    alt="arret_tabac"
+                    text="Arrêt du tabac et autres addictions"
+                    />
+                    <Pourquoi 
+                    picture={PicturePhobie}
+                    alt="phobie"
+                    text="Phobies, stress, douleurs, amélioration du sommeil…"
+                    />
+                    <Pourquoi 
+                    picture={PictureAlimentaire}
+                    alt="trouble_alimentaire"
+                    text="Gestion du trouble alimentaire"
+                    />
                   </div>
-                  <div className="pourquoi-bloc">
-                    <img src="" alt="" />
-                    <p>pourquoi 2</p>
-                  </div>
-                  <div className="pourquoi-bloc">
-                    <img src="" alt="" />
-                    <p>pourquoi 3</p>
-                  </div>
+                  <Link to="/presentation" target="_blank">
+                    <Button text="En savoir plus"/>
+                  </Link>
                 </div>
+                
               </div>
             </div>
             <div className="accueil-qui">
