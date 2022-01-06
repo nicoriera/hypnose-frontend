@@ -8,7 +8,7 @@ const Psycho = (props) => {
           <h4 className="therapie-titre">{props.therapie}</h4>
         </div>
         <div className="therapie-picture">
-        <img src="" alt="" />
+        <img src={props.picture} alt={props.alt} />
         </div>
         <ul>
         <li>{props.trouble1}</li>

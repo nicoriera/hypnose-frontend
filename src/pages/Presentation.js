@@ -1,12 +1,16 @@
 import React from "react";
 
-import Vagues from "../assets/pictures/vague.gif"
-
-import Footer from "../components/Footer";
-
+// COMPONENTS
 import Psycho from "../components/Psycho";
 import Comportement from "../components/Comportement"
 import Depassement from "../components/Depassement"
+import Footer from "../components/Footer";
+
+// PICTURES
+import Vagues from "../assets/pictures/vague.gif"
+import PicturePsycho from "../assets/pictures/trouble_psycho.jpg"
+import PictureTrouble from "../assets/pictures/trouble_alimentaire.jpg"
+import PictureDepassement from "../assets/pictures/depassement_de_soi.jpg"
 
 const Presentation = () => {
   return (
@@ -47,6 +51,7 @@ const Presentation = () => {
         <h2>Thérapies</h2>
         <div className="therapies-blocs">
           <Psycho
+            picture={PicturePsycho}
             therapie="Troubles psychologiques / émotionnels"
             trouble1="Confiance en soi / estime de soi"
             trouble2="Gestion des émotions"
@@ -63,6 +68,7 @@ const Presentation = () => {
             color="#F3F2EE"
           />
           <Comportement
+            picture={PictureTrouble}
             therapie="Troubles comportementaux"
             trouble1="Phobies"
             trouble2="Arrêt du tabac"
@@ -74,6 +80,7 @@ const Presentation = () => {
             color="#F3F2EE"
           />
           <Depassement
+          picture={PictureDepassement}
             therapie="Dépassement de soi"
             trouble1="Concentration"
             trouble2="Organisation"

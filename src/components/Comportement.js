@@ -7,6 +7,9 @@ const Comportement = (props) => {
         <div>
           <h4 className="therapie-titre">{props.therapie}</h4>
         </div>
+        <div className="therapie-picture">
+        <img src={props.picture} alt={props.alt} />
+        </div>
         <ul>
         <li>{props.trouble1}</li>
         <li>{props.trouble2}</li>
