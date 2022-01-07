@@ -17,22 +17,42 @@ const Navbar = () => {
         </li>
         <li>
           <Link className="link" to="/presentation">
-            L’hypnose, c’est quoi ?
+          <div>
+          L’hypnose,
+          </div>
+          <div>
+          c’est quoi ?
+          </div>
           </Link>
         </li>
         <li>
           <Link className="link" to="/seance">
-            Comment se déroule une séance ?
+          <div>
+          Comment
+          </div>
+          <div>
+          se déroule une séance ?
+          </div>
           </Link>
         </li>
         <li>
           <Link className="link" to="/qui">
-            Votre hypnothérapeute
+          <div>
+          Votre
+          </div>
+          <div>
+          hypnothérapeute
+          </div>
           </Link>
         </li>
         <li>
           <Link className="link" to="/tarifs">
-            Quels sont mes tarifs ?
+          <div>
+          Quels
+          </div>
+          <div>
+          sont mes tarifs ?
+          </div>
           </Link>
         </li>
         <li>
@@ -42,7 +62,12 @@ const Navbar = () => {
         </li>
         <li>
           <Link className="link-bold" to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
-            Prendre rendez-vous
+          <div>
+          Prendre
+          </div>
+          <div>
+          rendez-vous
+          </div>
           </Link>
         </li>
       </ul>
