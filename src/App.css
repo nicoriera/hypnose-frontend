@@ -274,15 +274,18 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0 20px;
-  width: 20%;
+  margin: 0 50px;
+  width: 15vw;
 }
 .accueil-pourquoi-bloc img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
   object-fit: cover;
+}
+.accueil-pourquoi-link:hover{
+  font-weight: bold;
+  color: var(--bloc-bg-color);
 }
 /* PRESENTATION */
 

@@ -109,11 +109,13 @@ const Accueil = () => {
                     alt="trouble_alimentaire"
                     text="Gestion du trouble alimentaire"
                     />
+                    <Link className="accueil-pourquoi-link" to="/presentation" target="_blank">
                     <Pourquoi
                     picture={PicturePlus}
                     alt="en_savoir_plus"
                     text="En savoir plus"
                     />
+                    </Link>
                   </div>
                 </div>
                 
@@ -158,6 +160,7 @@ const Accueil = () => {
           <div className="accueil-infos-contact">
           <div className="accueil-info-christophe">
             <h2>Comment me contacter ?</h2>
+            <div className="trait"></div>
             <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifiée</span></div>
             <div className="info-christophe-contact">
               <div><span className="bold">Téléphone : </span><span>06 37 66 52 97</span></div>
@@ -165,7 +168,7 @@ const Accueil = () => {
             </div>
             <div className="info-christophe-venir">
               <div><span className="bold">Lieu : </span><span>14 boulevard du Général de Gaulle 64700 HENDAYE </span></div>
-              <div><span className="bold">Horaires : </span><span>du lundi au vendredi de XXh à XXh et samedi matin de XXh à XXh </span></div>
+              <div><span className="bold">Horaires : </span><span>du mardi au vendredi de 9h à 19h et le samedi matin de 9h à 12h</span></div>
             </div>
             <div><span className="bold">Infos : </span><span>Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres) </span></div>
             </div>
