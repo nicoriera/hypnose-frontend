@@ -12,6 +12,7 @@ import PictureProfil from "../assets/pictures/picture_profil.JPG"
 import PictureTabac from "../assets/pictures/arret_tabac.jpg"
 import PicturePhobie from "../assets/pictures/phobie.jpg"
 import PictureAlimentaire from "../assets/pictures/trouble_alimentaire.jpg"
+import PicturePlus from "../assets/pictures/en_savoir_plus.jpg"
 
 // COMPONENTS
 import Button from "../components/Button"
@@ -70,14 +71,18 @@ const Accueil = () => {
         <div>
             <div className="accueil-text">
               <div className="accueil-text-presentation">
-                <h2>Comment l'hypnose peut vous aider ?</h2>
+                <div className="accueil-text-h2">
+                  <h2>Comment l'hypnose peut vous aider ?</h2>
+                  <div className="trait"></div>
+                </div>
                 <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
                 écho en vous. Une très grande majorité de nos maux sont installés
                 ou maintenus par la partie consciente de notre cerveau. L’état
                 d’hypnose, en laissant intervenir notre partie inconsciente, va
                 nous permettre de trouver des solutions pour reprendre le contrôle
                 sur nos vies. Vous avez déjà, sans le savoir, fait une partie du
-                chemin. Continuons cette route ensemble.</p>
+                chemin.</p>
+                <p>Continuons cette route ensemble.</p>
               </div>
               <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
                 <Button text="Prendre rendez-vous"/>
@@ -86,6 +91,7 @@ const Accueil = () => {
             <div className="accueil-pourquoi">
               <div>
                 <h2>Pourquoi consulter en hypnothérapie ?</h2>
+                <div className="trait"></div>
                 <div className="accueil-pourquoi-container">
                   <div className="accueil-pourquoi-blocs">
                     <Pourquoi 
@@ -103,10 +109,12 @@ const Accueil = () => {
                     alt="trouble_alimentaire"
                     text="Gestion du trouble alimentaire"
                     />
+                    <Pourquoi
+                    picture={PicturePlus}
+                    alt="en_savoir_plus"
+                    text="En savoir plus"
+                    />
                   </div>
-                  <Link to="/presentation" target="_blank">
-                    <Button text="En savoir plus"/>
-                  </Link>
                 </div>
                 
               </div>
