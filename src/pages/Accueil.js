@@ -72,7 +72,7 @@ const Accueil = () => {
             <div className="accueil-text">
               <div className="accueil-text-presentation">
                 <div className="accueil-text-h2">
-                  <h2>Comment l'hypnose peut vous aider ?</h2>
+                  <h2>Comment l'hypnose peut vous aider ?</h2>
                   <div className="trait"></div>
                 </div>
                 <p> Si vous êtes sur mon site, c’est que l’idée de changement fait
@@ -121,33 +121,36 @@ const Accueil = () => {
             </div>
             <div className="accueil-qui">
               <div className="accueil-text-qui">
+                <div className="picture-accueil">
+                  <img  src={PictureProfil} alt="accueil" />
+                </div>
                 <div className="accueil-qui-text">
                   <h2>Qui suis-je ?</h2>
+                  <div className="trait"></div>
                   <ul>
                     <li>Certifié praticien en hypnose Ericksonienne par l’école de psychotéraphie Psynapse</li>
                     <li>Spécialisé en gestion de poids et arrêt du tabac</li>
                     <li>Certifié technicien en PNL (programmation neuro-linguistique)</li>
                     <li>Reconnu par la FFHTB (Fédération Française d’Hypnose et des Thérapies Brèves) et la WHO (World Hypnosis Organization)</li>
                   </ul>
+                <div className="accueil-qui-bloc">
+                  <div className="logos-hypnose">
+                    <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
+                    <img src={LogoPsynapse} alt="logo-psynapse" />
+                    </Link>
+                    <Link className="logo-who" to={{ pathname: "https://www.world-hypnosis.org/fr" }} target="_blank">
+                    <img src={LogoWho} alt="logo-who" />
+                    </Link>
+                    <Link className="logo-ffhtb" to={{ pathname: "https://psynapse.fr/certifications-hypnose-pnl/federation-francaise-hypnose-therapies-breves-ffhtb/" }} target="_blank">
+                    <img src={LogoFfhtb} alt="logo-ffhtb" />
+                    </Link>
+                  </div>
                   <Link to="/qui" target="_blank">
                     <Button text="En savoir plus"/>
                   </Link>
                 </div>
-                <div className="picture-accueil">
-                  <img  src={PictureProfil} alt="accueil" />
+                
                 </div>
-              </div>
-              <div className="logos-hypnose">
-                <p>Certifications reconnues :</p>
-                <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
-                <img src={LogoPsynapse} alt="logo-psynapse" />
-                </Link>
-                <Link className="logo-who" to={{ pathname: "https://www.world-hypnosis.org/fr" }} target="_blank">
-                <img src={LogoWho} alt="logo-who" />
-                </Link>
-                <Link className="logo-ffhtb" to={{ pathname: "https://psynapse.fr/certifications-hypnose-pnl/federation-francaise-hypnose-therapies-breves-ffhtb/" }} target="_blank">
-                <img src={LogoFfhtb} alt="logo-ffhtb" />
-                </Link>
               </div>
             </div>
 
@@ -155,7 +158,7 @@ const Accueil = () => {
           <div className="accueil-infos-contact">
           <div className="accueil-info-christophe">
             <h2>Comment me contacter ?</h2>
-            <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifée</span></div>
+            <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifiée</span></div>
             <div className="info-christophe-contact">
               <div><span className="bold">Téléphone : </span><span>06 37 66 52 97</span></div>
               <div><span className="bold">Email : </span><span>christophebaccou.hypnose@gmail.com</span></div>

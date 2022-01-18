@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="infos-contact">
           <div className="info-christophe">
             <h2>Comment me contacter ?</h2>
-            <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifée</span></div>
+            <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifiée</span></div>
             <div className="info-christophe-contact">
               <div><span className="bold">Téléphone : </span><span>06 37 66 52 97</span></div>
               <div><span className="bold">Email : </span><span>christophebaccou.hypnose@gmail.com</span></div>
