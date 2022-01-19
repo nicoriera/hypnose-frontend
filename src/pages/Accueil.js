@@ -151,12 +151,11 @@ const Accueil = () => {
                     <Button text="En savoir plus"/>
                   </Link>
                 </div>
-                
                 </div>
               </div>
             </div>
 
-            <div className="accueil-container-contact">
+        <div className="accueil-container-contact">
           <div className="accueil-infos-contact">
           <div className="accueil-info-christophe">
             <h2>Comment me contacter ?</h2>

@@ -7,7 +7,7 @@ import Depassement from "../components/Depassement"
 import Footer from "../components/Footer";
 
 // PICTURES
-import Vagues from "../assets/pictures/vague.gif"
+import GifVagues from "../assets/pictures/lac.gif"
 import PicturePsycho from "../assets/pictures/trouble_psycho.jpg"
 import PictureTrouble from "../assets/pictures/trouble_alimentaire.jpg"
 import PictureDepassement from "../assets/pictures/depassement_de_soi.jpg"
@@ -19,6 +19,7 @@ const Presentation = () => {
       <div className="presentation-hypnose" >
         <div className="presentation-hypnose-text">
           <h2>L’hypnose c’est quoi ?</h2>
+          <div className="trait"></div>
           <p>
           L’hypnose est ce qu’on appelle scientifiquement un « état de conscience
           modifié ». C’est un état naturel que l’on expérimente au quotidien.
@@ -34,20 +35,20 @@ const Presentation = () => {
           </p>
         </div>
         <div className="presentation-hypnose-gif">
-          <img src={Vagues} alt="loading..." />
+          <img src={GifVagues} alt="loading..." />
         </div>
-        </div>
-        <div className="presentation-remarque">
-          <h3>Remarque</h3>
-          <p>
-          Une séance d'hypnose ne remplace en aucune manière un avis ou un
-          traitement médical. Seul un médecin peut poser des diagnostics et lui
-          seul est habilité à prescrire, modifier ou supprimer un traitement
-          médical. L'hypnose peut vous accompagner lors de votre traitement
-          prescrit par votre médecin, parlez-en avec lui.
-          </p>
-        </div>
-        <div className="container-therapies">
+      </div>
+      <div className="presentation-remarque">
+        <h3>Remarque</h3>
+        <p>
+        Une séance d'hypnose ne remplace en aucune manière un avis ou un
+        traitement médical. Seul un médecin peut poser des diagnostics et lui
+        seul est habilité à prescrire, modifier ou supprimer un traitement
+        médical. L'hypnose peut vous accompagner lors de votre traitement
+        prescrit par votre médecin, parlez-en avec lui.
+        </p>
+      </div>
+      <div className="container-therapies">
         <h2>Thérapies</h2>
         <div className="therapies-blocs">
           <Psycho
