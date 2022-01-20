@@ -115,7 +115,7 @@ h2 {
 .link {
   text-decoration: none;
   background-color: none;
-  padding: 0 5px 0 5px;
+  padding: 0 10px;
   word-break: keep-all;
 }
 .link-bold {
@@ -683,8 +683,6 @@ textarea[type="textaera"] {
   }
   .accueil-info-christophe h2 {
     font-size: var(--h2-mq);
-  }
-  .accueil-container-contact{
   }
   .accueil-container-contact-formulary{
   width: 100%;

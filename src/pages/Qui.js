@@ -8,6 +8,7 @@ const Qui = () => {
       <div className="qui">
         <div className="qui-textes">
         <h2>Votre hypnothérapeute</h2>
+        <div className="trait"></div>
         <p>
         Le mystère qui entoure le fonctionnement du cerveau a toujours attiré ma
         curiosité. Comment utiliser son potentiel au maximum ? Pourquoi

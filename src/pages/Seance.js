@@ -13,6 +13,7 @@ const Seance = () => {
           </div>
           <div className="seance-textes">
           <h2>Comment se déroule une séance ?</h2>
+          <div className="trait"></div>
           <p>
           Contrairement à ce que laisse penser l’hypnose de spectacle, l’état
           hypnotique ne plonge pas dans un sommeil profond. La personne a

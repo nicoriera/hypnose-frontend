@@ -12,6 +12,7 @@ const Tarifs = () => {
     <div className="container-blocs">
       <div className="container-tarifs">
         <h2>Tarifs</h2>
+        <div className="trait"></div>
         <div className="tarifs-blocs">
           <Rdv
             rdv="RDV enfant-adolescent"
