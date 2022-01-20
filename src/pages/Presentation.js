@@ -50,6 +50,7 @@ const Presentation = () => {
       </div>
       <div className="container-therapies">
         <h2>Thérapies</h2>
+        <div className="trait"></div>
         <div className="therapies-blocs">
           <Psycho
             picture={PicturePsycho}
