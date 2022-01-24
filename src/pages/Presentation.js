@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 // PICTURES
 import GifVagues from "../assets/pictures/lac.gif"
 import PicturePsycho from "../assets/pictures/trouble_psycho.jpg"
-import PictureTrouble from "../assets/pictures/trouble_alimentaire.jpg"
+import PictureComportement from "../assets/pictures/troubles_comportementaux.jpg"
 import PictureDepassement from "../assets/pictures/depassement_de_soi.jpg"
 
 const Presentation = () => {
@@ -38,16 +38,6 @@ const Presentation = () => {
           <img src={GifVagues} alt="loading..." />
         </div>
       </div>
-      <div className="presentation-remarque">
-        <h3>Remarque</h3>
-        <p>
-        Une séance d'hypnose ne remplace en aucune manière un avis ou un
-        traitement médical. Seul un médecin peut poser des diagnostics et lui
-        seul est habilité à prescrire, modifier ou supprimer un traitement
-        médical. L'hypnose peut vous accompagner lors de votre traitement
-        prescrit par votre médecin, parlez-en avec lui.
-        </p>
-      </div>
       <div className="container-therapies">
         <h2>Thérapies</h2>
         <div className="trait"></div>
@@ -70,7 +60,7 @@ const Presentation = () => {
             color="#F3F2EE"
           />
           <Comportement
-            picture={PictureTrouble}
+            picture={PictureComportement}
             therapie="Troubles comportementaux"
             trouble1="Phobies"
             trouble2="Arrêt du tabac"
@@ -93,6 +83,16 @@ const Presentation = () => {
             color="#F3F2EE"
           />
         </div>
+      </div>
+      <div className="presentation-remarque">
+        <h3>Remarque</h3>
+        <p>
+        Une séance d'hypnose ne remplace en aucune manière un avis ou un
+        traitement médical. Seul un médecin peut poser des diagnostics et lui
+        seul est habilité à prescrire, modifier ou supprimer un traitement
+        médical. L'hypnose peut vous accompagner lors de votre traitement
+        prescrit par votre médecin, parlez-en avec lui.
+        </p>
       </div>
       <Footer/>
     </div>
