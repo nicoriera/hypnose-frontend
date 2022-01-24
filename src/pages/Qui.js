@@ -27,7 +27,7 @@ const Qui = () => {
         </p>
         <p>
         Installé sur Hendaye au 14 boulevard Charles de Gaulle, je vous reçois
-        sur rendez-vous les lundi, mardi, mercredi, jeudi et samedi matin.
+        sur rendez-vous du mardi au vendredi de 9h à 19h et le samedi matin de 9h à 12h.
         Parking gratuit à Gaztelu Zahar (140 mètres) Bus n°3 – Arrêt Ville (70
         mètres) Bus n°33-35-37 – Arrêt Mairie (220 mètres)
         </p>
