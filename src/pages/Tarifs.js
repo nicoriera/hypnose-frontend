@@ -15,15 +15,6 @@ const Tarifs = () => {
         <div className="trait"></div>
         <div className="tarifs-blocs">
           <Rdv
-            rdv="RDV enfant-adolescent"
-            age="(7-17 ans)"
-            infos="Comme pour l’adulte, chaque séance est unique.
-            J’accompagne votre enfant / adolescent avec bienveillance."
-            duree=" de 1h à 1h15"
-            prix="45€"
-            color="#F3F2EE"
-          />
-          <Rdv
             rdv="RDV Adulte"
             age="(à partir de 18 ans)"
             infos="Chaque personne est unique, chaque séance l’est aussi. Je vous
@@ -31,6 +22,15 @@ const Tarifs = () => {
             duree=" de 1h à 1h30"
             prix="60€"
             color="#FCF9EF"
+          />
+          <Rdv
+            rdv="RDV enfant-adolescent"
+            age="(7-17 ans)"
+            infos="Comme pour l’adulte, chaque séance est unique.
+            J’accompagne votre enfant / adolescent avec bienveillance."
+            duree=" de 1h à 1h15"
+            prix="45€"
+            color="#F3F2EE"
           />
           <Tarif
             tarif="RDV Tarif réduit"
@@ -47,7 +47,7 @@ const Tarifs = () => {
           <Forfait
             forfait="Forfait Arrêt tabac"
             infos="Comme chaque addiction est unique, nous déciderons ensemble de la durée du programme nécessaire (entre 2 et 4 séances) à votre libération définitive du tabac."
-            prix="150€"
+            prix="A partir de 150€"
             color="#EDF0F5"
           />
           <Forfait
@@ -57,7 +57,7 @@ const Tarifs = () => {
             color="#EDF0F5"
           />
           <Forfait
-            forfait="Forfait Gestion du poids"
+            forfait="Forfait anneau gastrique hypnotique"
             infos="La pose de l’anneau gastrique hypnotique se fait sur 4 séances, plus une séance de suivi 2 mois après l’installation de l’anneau"
             prix="300€"
             color="#EDF0F5"
