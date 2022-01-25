@@ -64,6 +64,13 @@ const Tarifs = () => {
           />
         </div>
       </div>
+      <div className="tarif-payement">
+      <p style={{fontWeight:"bold"}}>Mode de paiement :</p>
+      <ul>
+      <li>Paiement par chèques ou espèces</li>
+      <li>Certaines mutuelles prennent en charges les séances d'hypnothérapies, renseignez-vous auprès de la vôtre.</li>
+      </ul>
+      </div>
       <Footer/>
   </div>
    </div>

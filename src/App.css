@@ -353,7 +353,7 @@ margin-left: 30px;
   box-sizing: border-box;
   padding: 20px 30px;
   margin: 20px 10px;
-  width: 400px;
+  width: 350px;
   min-height: 500px;
 }
 .therapie-picture {
@@ -476,7 +476,12 @@ border-radius: 20px;
 }
 .tarif-infos{
   min-height: 80px;
-
+}
+.tarif-payement{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
 }
 /* CONTACT */
 
