@@ -424,7 +424,7 @@ border-radius: 20px;
 .container-blocs{
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 120vw;
 }
 .container-tarifs{
   display: flex;
@@ -438,17 +438,17 @@ border-radius: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
-.forfaits-blocs{
-  margin-top: 20px;
+.bloc {
+  display: flex;
 }
 .bloc-info {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 20px 30px;
+  padding: 10px 15px;
   margin: 20px;
-  width: 250px;
-  min-height: 470px;
+  width: 170px;
+  min-height: 530px;
 }
 .tarif-titre-bloc{
   display: flex;
@@ -458,7 +458,7 @@ border-radius: 20px;
 .tarif-titre, .therapie-titre {
   display: flex;
   flex-direction: column;
-  font-size: 23px;
+  font-size: 18px;
   text-align: center;
 }
 .tarif-age{

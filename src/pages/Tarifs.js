@@ -13,7 +13,8 @@ const Tarifs = () => {
       <div className="container-tarifs">
         <h2>Tarifs</h2>
         <div className="trait"></div>
-        <div className="tarifs-blocs">
+        <div className="bloc">
+         <div className="tarifs-blocs">
           <Rdv
             rdv="RDV Adulte"
             age="(à partir de 18 ans)"
@@ -63,6 +64,8 @@ const Tarifs = () => {
             color="#EDF0F5"
           />
         </div>
+        </div>
+       
       </div>
       <div className="tarif-payement">
       <p style={{fontWeight:"bold"}}>Mode de paiement :</p>
