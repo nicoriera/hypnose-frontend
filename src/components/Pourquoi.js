@@ -4,7 +4,7 @@ const Pourquoi = (props) => {
     return (
         <div className="accueil-pourquoi-bloc">
             <img src={props.picture} alt={props.alt}/>
-            <p>{props.text}</p>
+            <p className="accueil-pourquoi-bloc-p">{props.text}</p>
         </div>
     )
 }

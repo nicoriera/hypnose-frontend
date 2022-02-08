@@ -15,21 +15,10 @@ const Seance = () => {
           <h2>Comment se déroule une séance ?</h2>
           <div className="trait"></div>
           <p>
-          Contrairement à ce que laisse penser l’hypnose de spectacle, l’état
-          hypnotique ne plonge pas dans un sommeil profond. La personne a
-          conscience tout au long de la séance de ce qu’il se passe autour d’elle.
-          Elle peut décider en toute autonomie de sortir de l’état d’hypnose. Elle
-          peut aussi refuser certaines suggestions du thérapeute si celles-ci ne
-          sont pas en accord avec ses valeurs profondes. Le travail va commencer
-          en vous dès la prise de rendez-vous.
+          Contrairement à ce que laisse penser l’hypnose de spectacle, l’état hypnotique ne plonge pas dans un sommeil profond. La personne a conscience tout au long de la séance de ce qu’il se passe autour d’elle. Elle peut décider en toute autonomie de sortir de l’état d’hypnose. Elle peut aussi refuser certaines suggestions du thérapeute si celles-ci ne sont pas en accord avec ses valeurs profondes. Le travail va commencer en vous dès la prise de rendez-vous.
           </p>
           <p>
-          Que vous preniez réserviez un créneau par téléphone, message ou sur
-          Doctolib, nous aurons un bref échange avant notre première rencontre.
-          Nous faisons connaissance et vous m’exposerez votre demande. Je vous
-          explique en quoi et comment je vais vous accompagner. Je vous donne les
-          informations utiles à votre venue afin que votre séance soit uniquement
-          dédiée à votre mieux-être.
+          Que vous réserviez un créneau par téléphone, message ou sur Doctolib, nous aurons un bref échange avant notre première rencontre. L’idée étant de faire connaissance et d’échanger sur votre besoin. Je vous expliquerai en quoi et comment je vais vous accompagner. Je vous donnerai les informations utiles à votre venue afin que votre séance soit uniquement dédiée à votre mieux-être.
           </p>
           <h3>Le jour J</h3>
           <p>

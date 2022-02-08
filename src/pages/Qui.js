@@ -21,7 +21,7 @@ const Qui = () => {
         </p>
         <p>
         Formé à l’hypnose Ericksonnienne et à la PNL (Programmation Neuro
-        Linguistique) au sein de l’école de psychotéraphie Psynapse (Institut
+        Linguistique) au sein de l’école de psychotérapie Psynapse (Institut
         Européen reconnu par le World Hypnosis Organization (WHO)), je suis
         également diplômé de la spécialité gestion du poids et arrêt du tabac.
         </p>

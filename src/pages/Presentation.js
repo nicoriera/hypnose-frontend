@@ -21,17 +21,8 @@ const Presentation = () => {
           <h2>L’hypnose c’est quoi ?</h2>
           <div className="trait"></div>
           <p>
-          L’hypnose est ce qu’on appelle scientifiquement un « état de conscience
-          modifié ». C’est un état naturel que l’on expérimente au quotidien.
-          Lorsqu’on lit un livre et que notre concentration s’évade, quand on
-          conduit sur un trajet connu et que l’on ne réfléchit plus vraiment à la
-          route. Dans tous ces moments là du quotidien, nous sommes dans cet état
-          de conscience modifié. Physiquement ici, mentalement ailleurs. C’est
-          dans ces moments que notre inconscient, aussi appelée notre partie
-          automatique, prend le relais de notre conscient. En activant de façon
-          volontaire cet état de transe hypnotique lors d’une séance, le client
-          accède à toutes ses ressources nécessaires pour évoluer vers le
-          mieux-être.
+          <p>L'hypnose est ce que l’on appelle scientifiquement un « état de conscience modifié ».</p>
+          C’est un état naturel que l’on expérimente au quotidien. Lorsqu’on lit un livre et que notre concentration s’évade, quand on conduit sur un trajet connu et que l’on ne réfléchit plus vraiment à la route… Dans tous ces moments-là du quotidien, nous sommes dans cet état de conscience modifiée. Physiquement ici, mentalement ailleurs. Notre inconscient, aussi appelée notre partie automatique, prend alors le relais de notre conscient. En activant de façon volontaire cet état lors d’une séance, le client accède à toutes ses ressources nécessaires pour évoluer vers le mieux-être.
           </p>
         </div>
         <div className="presentation-hypnose-gif">
@@ -51,9 +42,9 @@ const Presentation = () => {
             trouble4="Stress"
             trouble5="Burn-out"
             trouble6="Colère"
-            trouble7="Peur"
+            trouble7="Peurs"
             trouble8="Difficultés personnelles"
-            trouble9="Traverser une épreuve : maladie, séparation, deuil"
+            trouble9="Épreuves de la vie : maladie, séparation, deuil"
             trouble10="Relation difficile aux autres"
             trouble11="Difficulté scolaire"
             trouble12="Etc…"
@@ -78,7 +69,7 @@ const Presentation = () => {
             trouble2="Organisation"
             trouble3="Performances sportives"
             trouble4="Performances intellectuelles"
-            trouble5="Préparation mentale à un événements"
+            trouble5="Préparation mentale à un événement"
             trouble6="Etc…"
             color="#F3F2EE"
           />

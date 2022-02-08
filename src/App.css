@@ -269,6 +269,7 @@ justify-content: center;
 .accueil-pourquoi-blocs{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 100px 0;
 }
 .accueil-pourquoi-bloc{
@@ -277,6 +278,10 @@ justify-content: center;
   align-items: center;
   margin: 0 50px;
   width: 15vw;
+}
+.accueil-pourquoi-bloc-p{
+  display: flex;
+  text-align: center;
 }
 .accueil-pourquoi-bloc img {
   height: 150px;
@@ -354,7 +359,7 @@ margin-left: 30px;
   padding: 20px 30px;
   margin: 20px 10px;
   width: 350px;
-  min-height: 500px;
+  min-height: 780px;
 }
 .therapie-picture {
   margin: 20px 0 50px 0;
