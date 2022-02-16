@@ -10,7 +10,7 @@ const Qui = () => {
         <h2>Votre hypnothérapeute</h2>
         <div className="trait"></div>
         <p>
-        Le mystère qui entoure le fonctionnement du cerveau a toujours attiré ma curiosité. Comment utiliser son potentiel au maximum ? Pourquoi avons-nous tendance à nous créer nos propres problèmes ? Et comment parvenons-nous à les résoudre ? Il y a plusieurs années, une proche connaissance a expérimenté l’hypnose pour vaincre à une phobie et j’ai été le témoin privilégié de son changement. A partir de ce moment-là, une partie de moi savait qu’un jour ou l’autre, je deviendrai hypnothérapeute.
+        Le mystère qui entoure le fonctionnement du cerveau a toujours attiré ma curiosité. Comment utiliser son potentiel au maximum ? Pourquoi avons-nous tendance à nous créer nos propres problèmes ? Et comment parvenons-nous à les résoudre ? Il y a plusieurs années, une proche connaissance a expérimenté l’hypnose pour vaincre une phobie et j’ai été le témoin privilégié de son changement. A partir de ce moment-là, une partie de moi savait qu’un jour ou l’autre, je deviendrai hypnothérapeute.
         </p>
         <p>
         Formé à l’hypnose Ericksonnienne et à la PNL (Programmation Neuro Linguistique) au sein de l’école de psychotéraphie Psynapse (Institut Européen reconnu par le World Hypnosis Organization (WHO)), je suis également diplômé de la spécialité gestion du poids et arrêt du tabac.
