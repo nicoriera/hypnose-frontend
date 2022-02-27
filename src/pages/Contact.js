@@ -12,6 +12,7 @@ const Contact = () => {
             <div className="trait"></div>
             <div>
             <span className="bold">Christophe Baccou</span><span> - Praticien certifié en hypnose ericksonienne</span>
+            <div className="info-christophe-siret"><span className="bold">Numéro de Siret :</span><span> xxxxx</span></div>
             </div>
             <div className="info-christophe-contact">
               <div><span className="bold">Téléphone : </span><span>06 37 66 52 97</span></div>
@@ -25,6 +26,7 @@ const Contact = () => {
               <div><span className="bold">Horaires : </span><span>du mardi au vendredi en journée et le samedi matin</span></div>
             </div>
             <div><span className="bold">Infos : </span><span>Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres) </span></div>
+            <div className="info-christophe-hebergement"><span className="bold">Site hébergé par :</span><span> xxxxx</span></div>
             </div>
         </div>
         <Map/>
