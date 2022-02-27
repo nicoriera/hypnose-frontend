@@ -160,7 +160,7 @@ const Accueil = () => {
           <div className="accueil-info-christophe">
             <h2>Comment me contacter ?</h2>
             <div className="trait"></div>
-            <div><span className="bold">Christophe Baccou</span><span> - Praticien en hypnothérapie Ericksonienne certifiée</span></div>
+            <div><span className="bold">Christophe Baccou</span><span> - Praticien certifié en hypnose ericksonienne</span></div>
             <div className="info-christophe-contact">
               <div><span className="bold">Téléphone : </span><span>06 37 66 52 97</span></div>
               <div>
@@ -170,7 +170,7 @@ const Accueil = () => {
             </div>
             <div className="info-christophe-venir">
               <div><span className="bold">Lieu : </span><span>14 boulevard du Général de Gaulle 64700 HENDAYE </span></div>
-              <div><span className="bold">Horaires : </span><span>du mardi au vendredi de 9h à 19h et le samedi matin de 9h à 12h</span></div>
+              <div><span className="bold">Horaires : </span><span>du mardi au vendredi en journée et le samedi matin</span></div>
             </div>
             <div><span className="bold">Infos : </span><span>Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres) </span></div>
             </div>
