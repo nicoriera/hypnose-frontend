@@ -11,7 +11,6 @@ const Footer = () => {
             <div>
             <a className="link-mail" href="mailto:christophebaccou.hypnose@gmail.com">christophebaccou.hypnose@gmail.com</a>
             </div>
-            <div>Mentions Légales</div>
             </div>
           </div>
     )
