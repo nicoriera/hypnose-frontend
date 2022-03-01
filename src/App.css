@@ -433,7 +433,6 @@ border-radius: 20px;
 .tarifs-blocs, .forfaits-blocs{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .bloc {
   display: flex;
