@@ -86,6 +86,9 @@ const Accueil = () => {
                 <div className="picture-accueil">
                   <img  src={PictureProfil} alt="accueil" />
                 </div>
+                <div>
+                  
+                </div>
                 <div className="accueil-qui-text">
                   <h2>Qui suis-je ?</h2>
                   <div className="trait"></div>
@@ -95,6 +98,7 @@ const Accueil = () => {
                     <li>Certifié technicien en PNL (programmation neuro-linguistique)</li>
                     <li>Reconnu par la FFHTB (Fédération Française d’Hypnose et des Thérapies Brèves) et la WHO (World Hypnosis Organization)</li>
                   </ul>
+      
                 <div className="accueil-qui-bloc">
                   <div className="logos-hypnose">
                     <Link className="logo-psynapse" to={{ pathname: "https://psynapse.fr/" }} target="_blank">
@@ -110,6 +114,9 @@ const Accueil = () => {
                   <Link to="/qui" target="_blank">
                     <Button text="En savoir plus"/>
                   </Link>
+                </div>
+                <div className="picture-accueil-media-query">
+                  <img  src={PictureProfil} alt="accueil" />
                 </div>
                 </div>
               </div>
