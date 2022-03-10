@@ -93,7 +93,7 @@ const Accueil = () => {
                   <h2>Qui suis-je ?</h2>
                   <div className="trait"></div>
                   <ul>
-                    <li>Certifié praticien en hypnose Ericksonienne par l’école de psychotéraphie Psynapse</li>
+                    <li>Certifié praticien en hypnose Ericksonienne par l’école de psychotérapie Psynapse</li>
                     <li>Spécialisé en gestion de poids et arrêt du tabac</li>
                     <li>Certifié technicien en PNL (programmation neuro-linguistique)</li>
                     <li>Reconnu par la FFHTB (Fédération Française d’Hypnose et des Thérapies Brèves) et la WHO (World Hypnosis Organization)</li>
