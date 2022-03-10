@@ -449,6 +449,7 @@ border-radius: 20px;
   margin: 20px;
   width: 170px;
   min-height: 530px;
+  justify-content: space-between;
 }
 .tarif-titre-bloc{
   display: flex;
@@ -803,6 +804,7 @@ margin-top: 15px;
 .bloc-info {
   width: 150px;
   min-height: 600px;
+  justify-content: space-between;
 }
 .tarif-titre-bloc{
   display: flex;
