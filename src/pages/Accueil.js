@@ -128,7 +128,7 @@ const Accueil = () => {
             <h2>Comment me contacter ?</h2>
             <div className="trait"></div>
             <div><span className="bold">Christophe Baccou</span><span> - Praticien certifié en hypnose ericksonienne</span></div>
-            <div className="info-christophe-siret"><span className="bold">Numéro de Siret :</span><span> xxxxx</span></div>
+            <div className="info-christophe-siret"><span className="bold">Numéro de Siret :</span><span> 822624086</span></div>
             <div className="info-christophe-contact">
               <div><span className="bold">Téléphone : </span><span>06 37 66 52 97</span></div>
               <div>
