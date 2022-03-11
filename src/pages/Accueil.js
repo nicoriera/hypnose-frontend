@@ -141,7 +141,7 @@ const Accueil = () => {
               <div><span className="bold">Horaires : </span><span>du mardi au vendredi en journée et le samedi matin</span></div>
             </div>
             <div><span className="bold">Infos : </span><span>Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres) </span></div>
-            <div className="info-christophe-hebergement"><span className="bold">Site hébergé par :</span><span> xxxxx</span></div>
+            <div className="info-christophe-hebergement"><span className="bold">Site hébergé par :</span><span> Hostinger</span></div>
             </div>
             </div>
           </div>

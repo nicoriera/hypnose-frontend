@@ -1,6 +1,6 @@
 {
   "name": "hypnose-frontend",
-  "homepage": "http://cabinet-hypnose-hendaye.fr/",
+  "homepage": "http://cabinet-hypnose-hendaye.fr",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
