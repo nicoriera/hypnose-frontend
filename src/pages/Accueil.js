@@ -44,7 +44,7 @@ const Accueil = () => {
                 chemin.</p>
                 <p>Continuons cette route ensemble.</p>
               </div>
-              <Link to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
+              <Link to={{ pathname: "https://www.doctolib.fr/hypnotherapeute/hendaye/christophe-baccou" }} target="_blank">
                 <Button text="Prendre rendez-vous"/>
               </Link>
             </div>

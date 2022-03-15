@@ -61,7 +61,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link className="link-bold" to={{ pathname: "https://www.doctolib.fr/" }} target="_blank">
+          <Link className="link-bold" to={{ pathname: "https://www.doctolib.fr/hypnotherapeute/hendaye/christophe-baccou" }} target="_blank">
           <div>
           Prendre
           </div>
