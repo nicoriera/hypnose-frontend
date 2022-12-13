@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Better Yesterday';
+    src: url('Better-Yesterday.eot');
+    src: url('Better-Yesterday.eot?#iefix') format('embedded-opentype'),
+        url('Better-Yesterday.woff2') format('woff2'),
+        url('Better-Yesterday.woff') format('woff'),
+        url('Better-Yesterday.ttf') format('truetype'),
+        url('Better-Yesterday.svg#Better-Yesterday') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

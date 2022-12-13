@@ -1,0 +1,915 @@
+:root {
+  --main-bg-color: white;
+  --bloc-bg-color: rgb(17, 131, 54);
+  --bloc-bg-color-20: rgba(17, 131, 54, 0.123);
+  --border-border-color: rgb(17, 131, 54);
+  --text-color: rgb(17, 131, 54);
+  --shadow: 0 4px 4px hsl(0deg 0% 0% / 0.1);
+  --text-courant: 16px;
+  --h1-mq: 25px;
+  --line-height: 30px;
+}
+
+.font-face-by {
+  font-family: "Better Yesterday";
+}
+
+h1 {
+  font-size: 42px;
+  margin: 2em 0 0.5em 0;
+}
+.site-container {
+  padding: 0 80px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  margin-top: 100px;
+  padding: 0 80px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.bold {
+  font-weight: bold;
+}
+.link-mail:hover {
+  font-weight: bold;
+  color: var(--bloc-bg-color);
+}
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 20px;
+}
+.container-footer {
+  display: flex;
+  margin: 100px 0;
+  height: auto;
+  position: relative;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-courant);
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--bloc-bg-color-20);
+}
+.button-link,
+.button-contact {
+  margin-top: 10px;
+  background-color: var(--bloc-bg-color);
+  border: 2px solid var(--bloc-bg-color);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+}
+.button-link:hover,
+.button-contact:hover {
+  background-color: white;
+  border: 2px solid var(--bloc-bg-color);
+  color: var(--bloc-bg-color);
+}
+.trait {
+  display: flex;
+  border: 1px solid black;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+/* HEADER */
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  width: 100%;
+  z-index: 999;
+  background-color: #ffffff;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+.header-logo {
+  width: 280px;
+  margin: 10px 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.menu li {
+  display: flex;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.link {
+  text-decoration: none;
+  background-color: none;
+  padding: 0 10px;
+  word-break: keep-all;
+}
+.link-bold {
+  text-decoration: none;
+  background-color: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.link:hover,
+.link-bold:hover {
+  color: var(--text-color);
+  font-weight: bold;
+}
+.link-home {
+  text-decoration: none;
+}
+
+/* ACCUEIL */
+
+.accueil-accroche {
+  display: flex;
+  background: fixed;
+  background-image: url("./assets/pictures/fond_accueil.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.container-accueil {
+  display: flex;
+  padding: 0 80px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.accueil-text-accroche {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-family: "Better Yesterday";
+  
+}
+.accueil-text-accroche-citation {
+  font-size: 70px;
+  font-weight: 400;
+}
+.accueil-text-accroche p {
+  font-size: 60px;
+  text-align: right;
+
+}
+.accueil-text, .accueil-pourquoi, .accueil-qui, .accueil-infos-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.accueil-text-presentation {
+  text-align: justify;
+  font-size: var(--text-courant);
+  line-height: var(--line-height);
+  width: 80%;
+  margin-bottom: 50px;
+}
+.accueil-text-presentation h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.accueil-text-h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accueil-pourquoi-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.accueil-pourquoi-blocs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0;
+}
+.accueil-pourquoi-bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+  width: 15vw;
+}
+.accueil-pourquoi-bloc-p {
+  display: flex;
+  text-align: center;
+}
+.accueil-pourquoi-bloc img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.accueil-pourquoi-link:hover {
+  font-weight: bold;
+  color: var(--bloc-bg-color);
+}
+
+.accueil-text-qui {
+  display: flex;
+  flex-direction: row;
+}
+.accueil-qui-text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-size: var(--text-courant);
+  line-height: var(--line-height);
+}
+.accueil-qui-text ul {
+  margin: 60px 0;
+}
+.accueil-qui-bloc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos-hypnose {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+.logo-psynapse,
+.logo-who,
+.logo-ffhtb {
+  display: flex;
+  justify-content: center;
+  width: 6vw;
+  margin: 0 20px;
+}
+.logo-ffhtb {
+  margin-right: 100px;
+}
+.picture-accueil {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border-radius: 10px;
+}
+.picture-accueil-media-query {
+  display: none;
+}
+.picture-accueil img {
+  display: flex;
+  object-fit: cover;
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
+}
+
+/* PRESENTATION */
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.presentation-hypnose {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin-top: 20px;
+}
+.presentation-hypnose-text p {
+  margin-top: 30px;
+}
+.presentation-hypnose-text {
+  text-align: justify;
+  line-height: var(--line-height);
+  font-size: var(--text-courant);
+  width: 65%;
+}
+.presentation-hypnose-gif {
+  width: 35%;
+  margin-left: 30px;
+}
+.presentation-hypnose-gif img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+.presentation-remarque {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: center;
+  margin-top: 50px;
+  font-size: var(--text-courant);
+}
+.container-therapies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.therapie-titre {
+  height: 60px;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+.therapies-blocs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.therapies-bloc-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  margin: 20px 10px;
+  width: 350px;
+  min-height: 780px;
+}
+.therapie-picture {
+  margin: 20px 0 50px 0;
+}
+.therapie-picture img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* SEANCE */
+
+.seance {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  height: 60%;
+}
+.seance-textes {
+  width: 80%;
+  font-size: var(--text-courant);
+}
+.seance-textes p {
+  text-align: justify;
+}
+.seance-image {
+  width: 20%;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.seance-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* QUI */
+
+.qui {
+  display: flex;
+  margin-top: 80px;
+}
+.qui-textes {
+  width: 50%;
+  text-align: justify;
+}
+.picture-qui {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 50px;
+  width: 50%;
+}
+.picture-qui img {
+  display: flex;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+/* TARIFS */
+
+.container-blocs {
+  align-items: center;
+  justify-content: center;
+  width: 120vw;
+}
+.container-tarifs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.tarifs-blocs,
+.forfaits-blocs {
+  display: flex;
+  justify-content: center;
+}
+.bloc {
+  display: flex;
+}
+.bloc-info {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  margin: 20px;
+  width: 170px;
+  min-height: 530px;
+  justify-content: space-between;
+}
+.tarif-titre-bloc {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.tarif-titre,
+.therapie-titre {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  text-align: center;
+}
+.tarif-age {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tarif-duree {
+  margin-top: 10px;
+}
+.bloc-prix {
+  margin-top: 20px;
+  display: flex;
+  height: 70px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+}
+.tarif-infos {
+  min-height: 80px;
+}
+.tarif-payement {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+/* CONTACT */
+
+.container-contact {
+  display: flex;
+  margin-top: 80px;
+  width: 50%;
+}
+.infos-contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.info-christophe {
+  font-size: 16px;
+  line-height: var(--line-height);
+}
+.info-christophe h1 {
+  margin-bottom: 50px;
+}
+.info-christophe-contact {
+  margin-top: 15px;
+}
+.info-christophe-siret {
+  margin-top: 15px;
+}
+.info-christophe-venir {
+  margin: 15px 0 15px 0;
+}
+.info-christophe-hebergement {
+  margin: 15px 0 15px 0;
+}
+
+/* ERREUR */
+
+.erreur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== MEDIA QUERY ========== */
+
+/* ++++++++++++++++++++++++++++++++++++
+====================================
+++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .logo-cross {
+    display: none;
+  }
+}
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait) {
+}
+@media screen and (max-width: 768px) {
+  .site-container {
+    padding: 0 20px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  /* HEADER  */
+  .menu {
+    display: none;
+  }
+  .menu.active {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+  }
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .menu-toggle p {
+    margin: 0 10px 0 0;
+  }
+  .nav-menu {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: baseline;
+    top: 12vh;
+    left: -100%;
+    position: fixed;
+    transition: 850ms;
+    box-sizing: border-box;
+  }
+  .nav-menu.active {
+    left: 0;
+    transition: 850ms;
+  }
+  .link {
+    padding: none;
+  }
+  .logo-bars {
+    cursor: pointer;
+    transition: 300ms;
+  }
+  .logo-bars:hover,
+  .logo-cross:hover {
+    color: var(--text-color);
+  }
+  .logo-cross {
+    right: 0;
+    position: absolute;
+    margin-right: 20px;
+  }
+
+  /* ACCUEIL */
+  .container-accueil {
+    padding: 0 20px;
+  }
+  .accueil-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .accueil-pourquoi{
+    height: 100vh;
+  } 
+  
+  .accueil-qui {
+    height: 150vh;
+  }
+ 
+  .accueil-text-accroche-citation {
+    font-size: 50px;
+  }
+  .accueil-text-accroche p {
+    font-size: 30px;
+  }
+  .accueil-infos-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .accueil-text-presentation {
+    margin: 50px 0;
+    width: 100%;
+  }
+  .accueil-text-presentation h1 {
+    font-size: var(--h1-mq);
+  }
+  .accueil-text-qui {
+    display: flex;
+    flex-direction: column;
+  }
+  .accueil-text-qui h1 {
+    font-size: var(--h1-mq);
+  }
+  .accueil-qui-text {
+    width: 100%;
+  }
+  .picture-accueil {
+    display: none;
+  }
+  .picture-accueil-media-query {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  .picture-accueil-media-query img {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
+    object-fit: cover;
+  }
+
+  .accueil-qui-text ul {
+    margin: 60px 0 60px 0;
+  }
+  .accueil-qui-bloc {
+    flex-direction: column;
+  }
+  .logos-hypnose {
+    display: flex;
+  }
+  .logo-psynapse,
+  .logo-who,
+  .logo-ffhtb {
+    width: 50px;
+    height: 50px;
+    margin: 0 40px 50px 0;
+  }
+  .picture-accueil {
+    width: 100%;
+  }
+  .accueil-container-contact {
+    display: flex;
+    padding: 0;
+    align-items: center;
+  }
+  .accueil-info-christophe {
+    width: 100%;
+  }
+  .accueil-info-christophe h1 {
+    font-size: var(--h1-mq);
+  }
+ 
+  .accueil-pourquoi h1 {
+    font-size: var(--h1-mq);
+  }
+  .accueil-pourquoi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .accueil-pourquoi-blocs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px 0;
+  }
+  .accueil-pourquoi-bloc {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    height: 100px;
+    width: 250px;
+  }
+  .accueil-pourquoi-bloc-p {
+    font-size: 12px;
+  }
+  .accueil-pourquoi-bloc img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  /* PRESENTATION */
+  .presentation-hypnose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation-hypnose-text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .presentation-hypnose-text h1 {
+    font-size: var(--h1-mq);
+  }
+  .presentation-hypnose-gif {
+    width: 100%;
+    margin-left: 0;
+  }
+  .presentation-hypnose-gif img {
+    width: 100%;
+  }
+
+  /* SEANCE */
+  .seance {
+    flex-direction: column;
+    height: 70%;
+  }
+  .seance-textes {
+    width: 100%;
+  }
+  .seance-textes h1 {
+    width: 100%;
+    font-size: var(--h1-mq);
+  }
+  .seance-image {
+    width: 100%;
+    height: 10%;
+    margin-right: 0;
+  }
+
+  /* QUI */
+  .qui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .qui-textes {
+    width: 100%;
+  }
+  .qui-textes h1 {
+    font-size: var(--h1-mq);
+  }
+  .picture-qui {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  .picture-qui img {
+    object-fit: cover;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+  }
+  /* TARIFS */
+
+  .container-blocs {
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+  .container-tarifs {
+    margin-top: 20px;
+  }
+  .tarifs-blocs,
+  .forfaits-blocs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .bloc {
+    display: flex;
+  }
+  .bloc-info {
+    width: 150px;
+    min-height: 600px;
+    justify-content: space-between;
+  }
+  .tarif-titre-bloc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .tarif-titre,
+  .therapie-titre {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+  }
+  .tarif-age {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tarif-duree {
+    margin-top: 10px;
+  }
+  .bloc-prix {
+    margin-top: 20px;
+    display: flex;
+    height: 70px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+  }
+  .tarif-infos {
+    min-height: 80px;
+  }
+  .tarif-payement {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+  }
+  /* CONTACT */
+
+  .container-contact {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .infos-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .info-christophe h1 {
+    font-size: var(--h1-mq);
+  }
+
+  .containerStyle {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .menu li {
+    font-size: 10px;
+    transition: 300ms;
+  }
+  .link-bold {
+    font-size: 14px;
+    transition: 300ms;
+  }
+  .header-logo {
+    width: 180px;
+  }
+  .link:hover,
+  .link-bold:hover {
+    font-size: 14px;
+  }
+  .presentation-hypnose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation-hypnose-text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .presentation-hypnose-text h1 {
+    font-size: var(--h1-mq);
+  }
+  .presentation-hypnose-gif {
+    width: 100%;
+    margin-left: 0;
+  }
+  .presentation-hypnose-gif img {
+    width: 100%;
+  }
+}

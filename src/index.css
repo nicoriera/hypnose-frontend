@@ -1,0 +1,21 @@
+.font-link {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Hurricane", cursive;
+}
+
+@font-face {
+  font-family: 'Better Yesterday';
+  src: url('./assets/font/better_yesterday/Better-Yesterday.eot');
+  src: url('./assets/font/better_yesterday/Better-Yesterday.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/better_yesterday/Better-Yesterday.woff2') format('woff2'),
+      url('./assets/font/better_yesterday/Better-Yesterday.woff') format('woff'),
+      url('./assets/font/better_yesterday/Better-Yesterday.ttf') format('truetype'),
+      url('./assets/font/better_yesterday/Better-Yesterday.svg#Better-Yesterday') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@import "./resets/normalize.css";
+@import "./resets/reset.local.css";
