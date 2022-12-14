@@ -37,7 +37,7 @@ const Presentation = () => {
               lit un livre et que notre concentration s’évade, quand on conduit
               sur un trajet connu et que l’on ne réfléchit plus vraiment à la
               route… Dans tous ces moments-là du quotidien, nous sommes dans cet
-              état de conscience modifiée. Physiquement ici, mentalement
+              état de conscience modifié. Physiquement ici, mentalement
               ailleurs. Notre inconscient, aussi appelée notre partie
               automatique, prend alors le relais de notre conscient. En activant
               de façon volontaire cet état lors d’une séance, le client accède à

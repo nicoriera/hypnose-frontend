@@ -21,7 +21,7 @@ const Tarifs = () => {
             <div className="tarifs-blocs">
               <Rdv
                 rdv="RDV Adulte"
-                age="(à partir de 18 ans)"
+                soustitre="(à partir de 18 ans)"
                 infos="Chaque personne est unique, chaque séance l’est aussi. Je vous
             accompagne à votre rythme vers votre objectif"
                 duree=" de 1h à 1h30"
@@ -30,7 +30,7 @@ const Tarifs = () => {
               />
               <Rdv
                 rdv="RDV enfant-adolescent"
-                age="(7-17 ans)"
+                soustitre="(7-17 ans)"
                 infos="Comme pour l’adulte, chaque séance est unique.
             J’accompagne votre enfant / adolescent avec bienveillance."
                 duree=" de 1h à 1h15"
@@ -50,7 +50,8 @@ const Tarifs = () => {
             </div>
             <div className="forfaits-blocs">
               <Forfait
-                forfait="Forfait Arrêt tabac"
+                forfait="Forfait Addictions"
+                soustitre="(tabac,alcool,...)"
                 infos="Comme chaque addiction est unique, nous déciderons ensemble de la durée du programme nécessaire (entre 2 et 4 séances) à votre libération définitive du tabac."
                 prix="A partir de 150€"
                 color="#EDF0F5"

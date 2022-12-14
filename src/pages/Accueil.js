@@ -34,9 +34,7 @@ const Accueil = () => {
           />
         </Helmet>
         <div className="accueil-text-accroche">
-          <h1 className="accueil-text-accroche-citation">
-            « Le changement est une porte qui s'ouvre de l’intérieur »
-          </h1>
+          <h1>« Le changement est une porte qui s'ouvre de l’intérieur »</h1>
           <p>Tom Peters</p>
         </div>
       </div>

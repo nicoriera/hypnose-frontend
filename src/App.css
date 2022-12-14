@@ -148,30 +148,29 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: center;
-  justify-content: center;
+  margin-top: 60px;
 }
 .container-accueil {
   display: flex;
-  padding: 0 80px;
   max-height: 100%;
   max-width: 100%;
 }
 .accueil-text-accroche {
   display: flex;
+  justify-content: left;
   flex-direction: column;
-  width: 60%;
+  width: 850px;
   font-family: "Better Yesterday";
-  
+  line-height: 0;
 }
-.accueil-text-accroche-citation {
+.accueil-text-accroche h1{
   font-size: 70px;
   font-weight: 400;
+  text-align: right;
 }
 .accueil-text-accroche p {
   font-size: 60px;
   text-align: right;
-
 }
 .accueil-text, .accueil-pourquoi, .accueil-qui, .accueil-infos-contact{
   display: flex;
@@ -180,7 +179,6 @@ h1 {
   justify-content: center;
   height: 100vh;
 }
-
 .accueil-text-presentation {
   text-align: justify;
   font-size: var(--text-courant);
@@ -445,8 +443,8 @@ h1 {
   flex-direction: column;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 20px;
-  width: 170px;
+  margin: 20px 10px;
+  width: 190px;
   min-height: 530px;
   justify-content: space-between;
 }
@@ -462,7 +460,7 @@ h1 {
   font-size: 18px;
   text-align: center;
 }
-.tarif-age {
+.sous-titre {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -471,14 +469,17 @@ h1 {
   margin-top: 10px;
 }
 .bloc-prix {
-  margin-top: 20px;
+  margin-top: 20px 10px;
   display: flex;
   height: 70px;
   background-color: white;
+  border-radius: 5px;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   box-shadow: var(--shadow);
+  font-size: 14px;
+  letter-spacing: -0.5px;
 }
 .tarif-infos {
   min-height: 80px;
