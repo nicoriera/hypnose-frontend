@@ -152,8 +152,7 @@ const Accueil = () => {
                     <Link
                       className="logo-ffhtb"
                       to={{
-                        pathname:
-                          "https://psynapse.fr/certifications-hypnose-pnl/federation-francaise-hypnose-therapies-breves-ffhtb/",
+                        pathname: "https://ffhtb.fr/",
                       }}
                       target="_blank"
                     >
