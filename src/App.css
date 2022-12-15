@@ -648,6 +648,7 @@ h1 {
   .accueil-infos-contact {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
   }
   .accueil-text-presentation {
     margin: 50px 0;
