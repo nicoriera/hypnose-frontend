@@ -616,14 +616,14 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
   }
   .accueil-pourquoi{
-    height: 100vh;
+    height: auto;
   } 
   
   .accueil-qui {
-    height: 150vh;
+    height: auto;
   }
   .accueil-text-accroche{
     align-items: center;
