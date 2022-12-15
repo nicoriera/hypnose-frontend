@@ -624,9 +624,13 @@ h1 {
   .accueil-qui {
     height: 150vh;
   }
- 
-  .accueil-text-accroche-citation {
-    font-size: 50px;
+  .accueil-text-accroche{
+    align-items: center;
+    justify-content: center;
+  }
+  .accueil-text-accroche h1 {
+    font-size: 2em;
+    word-break: break-all;
   }
   .accueil-text-accroche p {
     font-size: 30px;

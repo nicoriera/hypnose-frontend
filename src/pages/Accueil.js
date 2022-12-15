@@ -118,7 +118,10 @@ const Accueil = () => {
                     Certifié praticien en hypnose Ericksonienne par l’école de
                     psychothérapie Psynapse
                   </li>
-                  <li>Spécialisé en gestion de poids et arrêt du tabac</li>
+                  <li>
+                    Formation complémentaire en gestion du poids et arrêt du
+                    tabac
+                  </li>
                   <li>
                     Certifié technicien en PNL (programmation
                     neuro-linguistique)
