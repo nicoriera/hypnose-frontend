@@ -113,6 +113,7 @@ h1 {
 }
 .menu li {
   display: flex;
+  text-align: center;
   margin: 5px;
   border-radius: 5px;
   font-size: 13px;
@@ -152,7 +153,6 @@ h1 {
 }
 .container-accueil {
   display: flex;
-  max-height: 100%;
   max-width: 100%;
 }
 .accueil-text-accroche {
@@ -177,7 +177,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: calc(30% - 20px);
+  box-sizing:border-box;
 }
 .accueil-text-presentation {
   text-align: justify;
@@ -189,13 +190,9 @@ h1 {
 .accueil-text-presentation h1 {
   text-align: center;
   margin-bottom: 50px;
+  font-size: calc(1.5rem + 2vw);
+  line-height: 60px;
 }
-.accueil-text-h1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .accueil-pourquoi-container {
   display: flex;
   flex-direction: column;
@@ -229,7 +226,6 @@ h1 {
   font-weight: bold;
   color: var(--bloc-bg-color);
 }
-
 .accueil-text-qui {
   display: flex;
   flex-direction: row;
@@ -249,7 +245,6 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-
 .logos-hypnose {
   display: flex;
   height: 10vh;
@@ -267,19 +262,24 @@ h1 {
   margin-right: 100px;
 }
 .picture-accueil {
-  display: flex;
+  object-fit: cover;
   align-items: center;
-  width: 40%;
+  justify-content: center;
+  margin: 30px;
+  width: 300px;
+  max-width: 300px;
+  height: 500px;
+  max-width: 500px;
   border-radius: 10px;
 }
 .picture-accueil-media-query {
   display: none;
 }
 .picture-accueil img {
-  display: flex;
+  display: block;
   object-fit: cover;
-  width: 400px;
-  height: 600px;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075);
 }
@@ -434,6 +434,7 @@ h1 {
 .forfaits-blocs {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .bloc {
   display: flex;
@@ -579,7 +580,7 @@ h1 {
     height: 80vh;
     display: flex;
     align-items: baseline;
-    top: 12vh;
+    top: 11vh;
     left: -100%;
     position: fixed;
     transition: 850ms;
@@ -888,7 +889,7 @@ h1 {
     transition: 300ms;
   }
   .link-bold {
-    font-size: 14px;
+    font-size: 12px;
     transition: 300ms;
   }
   .header-logo {
@@ -896,7 +897,7 @@ h1 {
   }
   .link:hover,
   .link-bold:hover {
-    font-size: 14px;
+    font-size: 12px;
   }
   .presentation-hypnose {
     display: flex;
