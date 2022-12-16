@@ -159,11 +159,12 @@ h1 {
 }
 .accueil-text-accroche {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-direction: column;
-  width: 850px;
+  height: 500px;
   font-family: "Better Yesterday";
   line-height: 0;
+  padding: 0 5px;
 }
 .accueil-text-accroche h1{
   font-size: 70px;
@@ -896,19 +897,21 @@ h1 {
 
 @media screen and (max-width: 1250px) {
   .menu li {
-    font-size: 10px;
+    font-size: 12px;
     transition: 300ms;
   }
   .link-bold {
-    font-size: 12px;
+    font-size: 14px;
     transition: 300ms;
   }
   .header-logo {
     width: 180px;
   }
-  .link:hover,
+  .link:hover {
+    font-size: 14px;
+  }
   .link-bold:hover {
-    font-size: 12px;
+    font-size: 16px;
   }
   .presentation-hypnose {
     display: flex;
