@@ -173,61 +173,52 @@ const Accueil = () => {
             </div>
           </div>
 
-          <div className="accueil-container-contact">
-            <div className="accueil-infos-contact">
-              <div className="accueil-info-christophe">
-                <h1>Comment me contacter ?</h1>
-                <div className="trait"></div>
-                <div>
-                  <span className="bold">Christophe Baccou</span>
-                  <span> - Praticien certifié en hypnose ericksonienne</span>
-                </div>
-                <div className="info-christophe-siret">
-                  <span className="bold">Numéro de Siret :</span>
-                  <span> 822624086</span>
-                </div>
-                <div className="info-christophe-contact">
-                  <div>
-                    <span className="bold">Téléphone : </span>
-                    <span>06 37 66 52 97</span>
-                  </div>
-                  <div>
-                    <span className="bold">Email : </span>
-                    <a
-                      className="link-mail"
-                      href="mailto:christophebaccou.hypnose@gmail.com"
-                    >
-                      christophebaccou.hypnose@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <div className="info-christophe-venir">
-                  <div>
-                    <span className="bold">Lieu : </span>
-                    <span>
-                      14 boulevard du Général de Gaulle 64700 HENDAYE{" "}
-                    </span>
-                  </div>
-                  <div>
-                    <span className="bold">Horaires : </span>
-                    <span>
-                      du mardi au vendredi en journée et le samedi matin
-                    </span>
-                  </div>
-                </div>
-                <div>
-                  <span className="bold">Infos : </span>
-                  <span>
-                    Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 –
-                    Arrêt Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220
-                    mètres){" "}
-                  </span>
-                </div>
-                <div className="info-christophe-hebergement">
-                  <span className="bold">Site hébergé par :</span>
-                  <span> Hostinger</span>
-                </div>
+          <div className="accueil-contact">
+            <h1>Comment me contacter ?</h1>
+            <div className="trait"></div>
+            <div>
+              <span className="bold">Christophe Baccou</span>
+              <span> - Praticien certifié en hypnose ericksonienne</span>
+            </div>
+            <div className="info-christophe-siret">
+              <span className="bold">Numéro de Siret :</span>
+              <span> 822624086</span>
+            </div>
+            <div className="info-christophe-contact">
+              <div>
+                <span className="bold">Téléphone : </span>
+                <span>06 37 66 52 97</span>
               </div>
+              <div>
+                <span className="bold">Email : </span>
+                <a
+                  className="link-mail"
+                  href="mailto:christophebaccou.hypnose@gmail.com"
+                >
+                  christophebaccou.hypnose@gmail.com
+                </a>
+              </div>
+            </div>
+            <div className="info-christophe-venir">
+              <div>
+                <span className="bold">Lieu : </span>
+                <span>14 boulevard du Général de Gaulle 64700 HENDAYE </span>
+              </div>
+              <div>
+                <span className="bold">Horaires : </span>
+                <span>du mardi au vendredi en journée et le samedi matin</span>
+              </div>
+            </div>
+            <div>
+              <span className="bold">Infos : </span>
+              <span>
+                Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt
+                Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres){" "}
+              </span>
+            </div>
+            <div className="info-christophe-hebergement">
+              <span className="bold">Site hébergé par :</span>
+              <span> Hostinger</span>
             </div>
           </div>
         </div>
