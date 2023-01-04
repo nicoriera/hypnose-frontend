@@ -3,7 +3,12 @@
     [
         {
             "trouble":"Phobies",
-            "trouble1":"Arrêt du tabac"
+            "trouble":"Arrêt du tabac",
+            "trouble":"Compulsion alimentaire",
+            "trouble":"Trouble du sommeil",
+            "trouble":"Trouble sexuelle",
+            "trouble":"Enurésie",
+            "trouble":"Etc…"
         }
     ]
 }

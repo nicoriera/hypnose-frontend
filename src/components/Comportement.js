@@ -1,21 +1,5 @@
 import React from "react";
 
-// import troublesComportementauxData from "../data/troubles_comportementaux.json";
-
-// const renderTroubles = (troubles_comportementaux) => {
-//   return (
-//     <div>
-//       {troubles_comportementaux.map((troubles, idx) => {
-//         return (
-//           <ul key={idx}>
-//             <li>{troubles.trouble}</li>
-//             <li>{troubles.trouble1}</li>
-//           </ul>
-//         );
-//       })}
-//     </div>
-//   );
-// };
 const Comportement = (props) => {
   return (
     <div>
@@ -29,9 +13,6 @@ const Comportement = (props) => {
         <div className="therapie-picture">
           <img src={props.picture} alt={props.alt} />
         </div>
-        {/* <div>
-          {renderTroubles(troublesComportementauxData.troubles_comportementaux)}
-        </div> */}
         <ul>
           <li>{props.trouble1}</li>
           <li>{props.trouble2}</li>
