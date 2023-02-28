@@ -45,7 +45,7 @@ const Navbar = () => {
               className="link-bold"
               to={{
                 pathname:
-                  "https://www.doctolib.fr/hypnotherapeute/hendaye/christophe-baccou",
+                  "https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal",
               }}
               target="_blank"
             >
