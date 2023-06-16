@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Helmet from "react-helmet";
 
 // PICTURES
 import PictureProfil from "../assets/pictures/picture_profil.JPG";
@@ -13,24 +12,22 @@ import PicturePlus from "../assets/pictures/en_savoir_plus.jpg";
 import Button from "../components/Button";
 import Pourquoi from "../components/Pourquoi";
 import Logos from "../components/Logos";
+import HelmetMeta from "../components/HelmetMeta";
 
 const Accueil = () => {
   return (
     <div>
       <div className="accueil-accroche">
-        <Helmet>
-          <title>Cabinet Hypnose Hendaye : Christophe BACCOU</title>
-          <meta
-            name="description"
-            content="Si vous êtes sur mon site, c’est que l’idée de changement fait
-          écho en vous. Une très grande majorité de nos maux sont
-          installés ou maintenus par la partie consciente de notre
-          cerveau. L’état d’hypnose, en laissant intervenir notre partie
-          inconsciente, va nous permettre de trouver des solutions pour
-          reprendre le contrôle sur nos vies. Vous avez déjà, sans le
-          savoir, fait une partie du chemin."
-          />
-        </Helmet>
+        <HelmetMeta
+          title="Cabinet Hypnose Hendaye : Christophe BACCOU"
+          description="Si vous êtes sur mon site, c’est que l’idée de changement fait
+        écho en vous. Une très grande majorité de nos maux sont
+        installés ou maintenus par la partie consciente de notre
+        cerveau. L’état d’hypnose, en laissant intervenir notre partie
+        inconsciente, va nous permettre de trouver des solutions pour
+        reprendre le contrôle sur nos vies. Vous avez déjà, sans le
+        savoir, fait une partie du chemin."
+        />
         <div className="accueil-text-accroche">
           <h1>« Le changement est une porte qui s'ouvre de l’intérieur »</h1>
           <p>Tom Peters</p>
