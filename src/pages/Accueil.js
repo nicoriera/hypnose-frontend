@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import Helmet from "react-helmet";
 
 // PICTURES
-import LogoPsynapse from "../assets/pictures/logo_psynapse.png";
-import LogoWho from "../assets/pictures/logo_who.png";
-import LogoFfhtb from "../assets/pictures/logo_FFHTB.jpg";
 import PictureProfil from "../assets/pictures/picture_profil.JPG";
 import PictureTabac from "../assets/pictures/arret_tabac.jpg";
 import PicturePhobie from "../assets/pictures/phobie.jpg";
@@ -15,6 +12,7 @@ import PicturePlus from "../assets/pictures/en_savoir_plus.jpg";
 // COMPONENTS
 import Button from "../components/Button";
 import Pourquoi from "../components/Pourquoi";
+import Logos from "../components/Logos";
 
 const Accueil = () => {
   return (
@@ -61,7 +59,7 @@ const Accueil = () => {
             <Link
               to={{
                 pathname:
-                  "https://www.doctolib.fr/hypnotherapeute/hendaye/christophe-baccou",
+                  "https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal",
               }}
               target="_blank"
             >
@@ -138,29 +136,7 @@ const Accueil = () => {
 
                 <div className="accueil-qui-bloc">
                   <div className="logos-hypnose">
-                    <Link
-                      className="logo-psynapse"
-                      to={{ pathname: "https://psynapse.fr/" }}
-                      target="_blank"
-                    >
-                      <img src={LogoPsynapse} alt="logo-psynapse" />
-                    </Link>
-                    <Link
-                      className="logo-who"
-                      to={{ pathname: "https://www.world-hypnosis.org/fr" }}
-                      target="_blank"
-                    >
-                      <img src={LogoWho} alt="logo-who" />
-                    </Link>
-                    <Link
-                      className="logo-ffhtb"
-                      to={{
-                        pathname: "https://ffhtb.fr/",
-                      }}
-                      target="_blank"
-                    >
-                      <img src={LogoFfhtb} alt="logo-ffhtb" />
-                    </Link>
+                    <Logos />
                   </div>
                   <Link to="/qui" target="_blank">
                     <Button text="En savoir plus" />

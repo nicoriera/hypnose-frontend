@@ -1,0 +1,19 @@
+{
+  "logos": [
+    {
+      "name": "psynapse",
+      "url": "https://psynapse.fr/",
+      "imgSrc": "../assets/pictures/logo_psynapse.png"
+    },
+    {
+      "name": "who",
+      "url": "https://www.world-hypnosis.org/fr",
+      "imgSrc": "../assets/pictures/logo_who.png"
+    },
+    {
+      "name": "ffhtb",
+      "url": "https://ffhtb.fr/",
+      "imgSrc": "../assets/pictures/logo_FFHTB.jpg"
+    }
+  ]
+}
