@@ -44,7 +44,7 @@ const Tarifs = () => {
                 rsa="RSA"
                 infos="Pensez à prendre votre justificatif, sinon le prix sera celui d’une séance adulte."
                 duree=" de 1h à 1h15"
-                prix="45€"
+                prix="50€"
                 color="#F2F7F6"
               />
             </div>

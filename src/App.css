@@ -100,7 +100,7 @@ h1 {
   width: 100%;
   z-index: 999;
   background-color: #ffffff;
-  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: fadeInDown 500ms ease-in-out;
 }
 .header-logo {
   width: 280px;
@@ -120,13 +120,11 @@ h1 {
 }
 .link {
   text-decoration: none;
-  background-color: none;
   padding: 0 10px;
   word-break: keep-all;
 }
 .link-bold {
   text-decoration: none;
-  background-color: none;
   font-size: 15px;
   font-weight: bold;
 }
@@ -154,7 +152,7 @@ h1 {
 .container-accueil {
   display: flex;
   padding: 30px;
-  width: 0 auto;
+  width: auto;
   max-width: 100%;
 }
 .accueil-text-accroche {
@@ -166,7 +164,7 @@ h1 {
   line-height: 0;
   padding: 0 5px;
 }
-.accueil-text-accroche h1{
+.accueil-text-accroche h1 {
   font-size: 70px;
   font-weight: 400;
   text-align: right;
@@ -175,19 +173,21 @@ h1 {
   font-size: 60px;
   text-align: right;
 }
-.accueil-text{
+.accueil-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:  auto;
-  box-sizing:border-box;
+  height: auto;
+  box-sizing: border-box;
 }
-.accueil-pourquoi, .accueil-qui, .accueil-contact {
+.accueil-pourquoi,
+.accueil-qui,
+.accueil-contact {
   display: flex;
   flex-direction: column;
   justify-content: left;
   height: auto;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 .accueil-text-presentation {
   text-align: justify;
@@ -214,7 +214,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 50px 0 ;
+  margin: 50px 0;
 }
 .accueil-pourquoi-bloc {
   display: flex;
@@ -481,7 +481,7 @@ h1 {
   margin-top: 10px;
 }
 .bloc-prix {
-  margin-top: 20px 10px;
+  margin-top: 20px;
   display: flex;
   height: 70px;
   background-color: white;
@@ -601,9 +601,7 @@ h1 {
     left: 0;
     transition: 850ms;
   }
-  .link {
-    padding: none;
-  }
+
   .logo-bars {
     cursor: pointer;
     transition: 300ms;
@@ -622,21 +620,21 @@ h1 {
   .container-accueil {
     padding: 0 20px;
   }
-  .accueil-text{
+  .accueil-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: auto;
   }
-  .accueil-pourquoi{
+  .accueil-pourquoi {
     height: auto;
-  } 
-  
+  }
+
   .accueil-qui {
     height: auto;
   }
-  .accueil-text-accroche{
+  .accueil-text-accroche {
     align-items: center;
     justify-content: center;
   }
@@ -718,7 +716,7 @@ h1 {
   .accueil-info-christophe h1 {
     font-size: var(--h1-mq);
   }
- 
+
   .accueil-pourquoi h1 {
     font-size: var(--h1-mq);
   }
