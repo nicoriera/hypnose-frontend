@@ -53,15 +53,13 @@ const Accueil = () => {
                 Continuons cette route ensemble.
               </p>
             </div>
-            <Link
-              to={{
-                pathname:
-                  "https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal",
-              }}
+            <a
+              href="https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Button text="Prendre rendez-vous" />
-            </Link>
+            </a>
           </div>
           <div className="accueil-pourquoi">
             <div>
@@ -88,6 +86,7 @@ const Accueil = () => {
                     className="accueil-pourquoi-link"
                     to="/presentation"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Pourquoi
                       picture={PicturePlus}
@@ -135,7 +134,7 @@ const Accueil = () => {
                   <div className="logos-hypnose">
                     <Logos />
                   </div>
-                  <Link to="/qui" target="_blank">
+                  <Link to="/qui" target="_blank" rel="noopener noreferrer">
                     <Button text="En savoir plus" />
                   </Link>
                 </div>

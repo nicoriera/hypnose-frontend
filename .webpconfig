@@ -1,0 +1,6 @@
+# Configuration d'optimisation des images
+# Conversion automatique des images en WebP pour de meilleures performances
+# Qualité optimisée pour le web tout en gardant une qualité visuelle acceptable
+
+quality=85
+method=4

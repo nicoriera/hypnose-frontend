@@ -1,17 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, memo, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const Navbar = () => {
+
+const Navbar = memo(() => {
   const [sidebar, setSidebar] = useState(false);
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const showSidebar = useCallback(() => setSidebar(prev => !prev), []);
+  // eslint-disable-next-line no-unused-vars
+  const closeSidebar = useCallback(() => setSidebar(false), []);
 
   return (
     <>
-      <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-        <ul className={sidebar ? "menu active" : "menu"}>
+      <nav 
+        className={sidebar ? "nav-menu active" : "nav-menu"}
+        role="navigation"
+        aria-label="Menu principal"
+      >
+        <ul className={sidebar ? "menu active" : "menu"} role="menubar">
           <li>
-            <Link className="link" to="/">
+            <Link className="link" to="/" onClick={closeSidebar}>
               Accueil
             </Link>
           </li>
@@ -41,16 +48,14 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link
+            <a
               className="link-bold"
-              to={{
-                pathname:
-                  "https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal",
-              }}
+              href="https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Prendre rendez-vous
-            </Link>
+            </a>
           </li>
         </ul>
         <FontAwesomeIcon
@@ -70,6 +75,8 @@ const Navbar = () => {
       </div>
     </>
   );
-};
+});
+
+Navbar.displayName = 'Navbar';
 
 export default Navbar;
