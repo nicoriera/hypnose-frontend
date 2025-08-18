@@ -1,19 +1,32 @@
-import React from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
+import { logo } from "../utils/imageImports";
+import { ROUTES } from "../utils/constants";
 
-import Logo from "../assets/pictures/logo.png";
-
-const Header = () => {
+const Header = memo(() => {
   return (
-    <div className="container-header">
-      <Link className="link-home" to="/">
-        <img className="header-logo" src={Logo} alt="Cabinet Hypnose Hendaye" />
+    <header className="container-header" role="banner">
+      <Link 
+        className="link-home" 
+        to={ROUTES.HOME} 
+        aria-label="Retour à l'accueil du Cabinet Hypnose Hendaye"
+      >
+        <img 
+          className="header-logo" 
+          src={logo} 
+          alt="Logo Cabinet Hypnose Hendaye - Christophe Baccou"
+          width="150"
+          height="100"
+          loading="eager"
+        />
       </Link>
       <Navbar className="header-navbar" />
-    </div>
+    </header>
   );
-};
+});
+
+Header.displayName = 'Header';
 
 export default Header;
