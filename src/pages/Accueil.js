@@ -7,194 +7,310 @@ import PictureTabac from "../assets/pictures/arret_tabac.jpg";
 import PicturePhobie from "../assets/pictures/phobie.jpg";
 import PictureAlimentaire from "../assets/pictures/trouble_alimentaire.jpg";
 import PicturePlus from "../assets/pictures/en_savoir_plus.jpg";
+import FondAccueil from "../assets/pictures/fond_accueil.jpg";
 
 // COMPONENTS
-import Button from "../components/Button";
 import Pourquoi from "../components/Pourquoi";
 import Logos from "../components/Logos";
 import HelmetMeta from "../components/HelmetMeta";
 
 const Accueil = () => {
   return (
-    <div>
-      <div className="accueil-accroche">
-        <HelmetMeta
-          title="Cabinet Hypnose Hendaye : Christophe BACCOU"
-          description="Si vous êtes sur mon site, c’est que l’idée de changement fait
+    <div className="min-h-screen">
+      <HelmetMeta
+        title="Cabinet Hypnose Hendaye : Christophe BACCOU"
+        description="Si vous êtes sur mon site, c'est que l'idée de changement fait
         écho en vous. Une très grande majorité de nos maux sont
         installés ou maintenus par la partie consciente de notre
-        cerveau. L’état d’hypnose, en laissant intervenir notre partie
+        cerveau. L'état d'hypnose, en laissant intervenir notre partie
         inconsciente, va nous permettre de trouver des solutions pour
         reprendre le contrôle sur nos vies. Vous avez déjà, sans le
         savoir, fait une partie du chemin."
+      />
+
+      {/* Hero Section */}
+      <section className="relative flex items-center justify-center min-h-screen overflow-hidden bg-gradient-to-br from-primary-50 to-primary-100">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${FondAccueil})` }}
         />
-        <div className="accueil-text-accroche">
-          <h1>« Le changement est une porte qui s'ouvre de l’intérieur »</h1>
-          <p>Tom Peters</p>
+        <div className="absolute inset-0 bg-black bg-opacity-40" />
+        <div className="relative z-10 text-center max-w-4xl px-8 py-12">
+          <h1 className="quote-manuscript mb-4">
+            « Le changement est une porte qui s'ouvre de l'intérieur »
+          </h1>
+          <p className="text-xl md:text-2xl text-white text-center font-light opacity-90">
+            Tom Peters
+          </p>
         </div>
-      </div>
-      <div className="container-accueil">
-        <div>
-          <div className="accueil-text">
-            <div className="accueil-text-presentation">
-              <div className="accueil-text-h1">
-                <h1>Comment l'hypnose peut vous aider ?</h1>
-                <div className="trait"></div>
-              </div>
-              <p>
-                Si vous êtes sur mon site, c’est que l’idée de changement fait
-                écho en vous. Une très grande majorité de nos maux sont
-                installés ou maintenus par la partie consciente de notre
-                cerveau. L’état d’hypnose, en laissant intervenir notre partie
-                inconsciente, va nous permettre de trouver des solutions pour
-                reprendre le contrôle sur nos vies. Vous avez déjà, sans le
-                savoir, fait une partie du chemin.
-                <br />
-                Continuons cette route ensemble.
-              </p>
-            </div>
-            <a
-              href="https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button text="Prendre rendez-vous" />
-            </a>
-          </div>
-          <div className="accueil-pourquoi">
-            <div>
-              <h1>Pourquoi consulter en hypnothérapie ?</h1>
-              <div className="trait"></div>
-              <div className="accueil-pourquoi-container">
-                <div className="accueil-pourquoi-blocs">
-                  <Pourquoi
-                    picture={PictureTabac}
-                    alt="arret_tabac"
-                    text="Arrêt du tabac et autres addictions"
-                  />
-                  <Pourquoi
-                    picture={PicturePhobie}
-                    alt="phobie"
-                    text="Phobies, stress, douleurs, amélioration du sommeil…"
-                  />
-                  <Pourquoi
-                    picture={PictureAlimentaire}
-                    alt="trouble_alimentaire"
-                    text="Gestion du trouble alimentaire"
-                  />
-                  <Link
-                    className="accueil-pourquoi-link"
-                    to="/presentation"
+      </section>
+
+      {/* Section principale */}
+      <main className="bg-white">
+        {/* Section Introduction */}
+        <section className="py-16 bg-gradient-to-br from-primary-50 to-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="mb-8">
+                <h2 className="heading-ultra-clear mb-6">
+                  Comment l'hypnose peut vous aider ?
+                </h2>
+                <div className="trait-center"></div>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
+                  Si vous êtes sur mon site, c'est que l'idée de changement fait
+                  écho en vous. Une très grande majorité de nos maux sont
+                  installés ou maintenus par la partie consciente de notre
+                  cerveau. L'état d'hypnose, en laissant intervenir notre partie
+                  inconsciente, va nous permettre de trouver des solutions pour
+                  reprendre le contrôle sur nos vies. Vous avez déjà, sans le
+                  savoir, fait une partie du chemin.
+                </p>
+                <p className="text-xl font-semibold text-gray-900 mb-8">
+                  Continuons cette route ensemble.
+                </p>
+                <div className="mt-8">
+                  <a
+                    href="https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
-                    <Pourquoi
-                      picture={PicturePlus}
-                      alt="en_savoir_plus"
-                      text="En savoir plus"
-                    />
-                  </Link>
+                    className="btn btn-primary btn-lg">
+                    Prendre rendez-vous
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="accueil-qui">
-            <div className="accueil-text-qui">
-              <div className="picture-accueil">
-                <img src={PictureProfil} alt="accueil" />
+        </section>
+
+        {/* Section Pourquoi consulter */}
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="heading-ultra-clear mb-6">
+                Pourquoi consulter en hypnothérapie ?
+              </h2>
+              <div className="trait-center"></div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <Pourquoi
+                  picture={PictureTabac}
+                  alt="Arrêt du tabac et autres addictions"
+                  text="Arrêt du tabac et autres addictions"
+                />
               </div>
-              <div></div>
-              <div className="accueil-qui-text">
-                <h1>Qui suis-je ?</h1>
-                <div className="trait"></div>
-                <ul>
-                  <li>
-                    Certifié praticien en hypnose Ericksonienne par l’école de
-                    psychothérapie Psynapse
+              <div className="flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <Pourquoi
+                  picture={PicturePhobie}
+                  alt="Phobies, stress, douleurs, amélioration du sommeil"
+                  text="Phobies, stress, douleurs, amélioration du sommeil…"
+                />
+              </div>
+              <div className="flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <Pourquoi
+                  picture={PictureAlimentaire}
+                  alt="Gestion du trouble alimentaire"
+                  text="Gestion du trouble alimentaire"
+                />
+              </div>
+              <div className="flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <Link
+                  to="/presentation"
+                  className="block w-full"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <Pourquoi
+                    picture={PicturePlus}
+                    alt="En savoir plus sur l'hypnose"
+                    text="En savoir plus"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section Qui suis-je */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+              <div className="flex justify-center lg:col-span-1">
+                <img
+                  src={PictureProfil}
+                  alt="Christophe Baccou - Hypnothérapeute"
+                  className="w-full max-w-80 h-auto rounded-lg shadow-lg object-cover"
+                />
+              </div>
+              <div className="lg:col-span-2">
+                <h2 className="heading-ultra-clear mb-6">Qui suis-je ?</h2>
+                <div className="trait mb-6"></div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start">
+                    <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
+                      ✓
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">
+                      Certifié praticien en hypnose Ericksonienne par l'école de
+                      psychothérapie Psynapse
+                    </span>
                   </li>
-                  <li>
-                    Formation complémentaire en gestion du poids et arrêt du
-                    tabac
+                  <li className="flex items-start">
+                    <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
+                      ✓
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">
+                      Formation complémentaire en gestion du poids et arrêt du
+                      tabac
+                    </span>
                   </li>
-                  <li>
-                    Certifié technicien en PNL (programmation
-                    neuro-linguistique)
+                  <li className="flex items-start">
+                    <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
+                      ✓
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">
+                      Formation complémentaire en gestion des troubles du
+                      sommeil
+                    </span>
                   </li>
-                  <li>
-                    Reconnu par la FFHTB (Fédération Française d’Hypnose et des
-                    Thérapies Brèves) et la WHO (World Hypnosis Organization)
+                  <li className="flex items-start">
+                    <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
+                      ✓
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">
+                      Formation complémentaire en gestion des troubles
+                      alimentaires
+                    </span>
                   </li>
-                  <li>
-                    Adhérent du syndicat unitaire des professionnels de
-                    l'hypnose (Sup-H)
+                  <li className="flex items-start">
+                    <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
+                      ✓
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">
+                      Certifié technicien en PNL (programmation
+                      neuro-linguistique)
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
+                      ✓
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">
+                      Reconnu par la FFHTB (Fédération Française d'Hypnose et
+                      des Thérapies Brèves) et la WHO (World Hypnosis
+                      Organization)
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
+                      ✓
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">
+                      Adhérent du syndicat unitaire des professionnels de
+                      l'hypnose (Sup-H)
+                    </span>
                   </li>
                 </ul>
-
-                <div className="accueil-qui-bloc">
-                  <div className="logos-hypnose">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+                  <div className="flex items-center gap-4">
                     <Logos />
                   </div>
-                  <Link to="/qui" target="_blank" rel="noopener noreferrer">
-                    <Button text="En savoir plus" />
+                  <Link to="/qui" className="btn btn-secondary">
+                    En savoir plus
                   </Link>
                 </div>
-                <div className="picture-accueil-media-query">
-                  <img src={PictureProfil} alt="christope-baccou" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section Contact */}
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="text-center mb-8">
+              <h2 className="heading-ultra-clear mb-6">
+                Comment me contacter ?
+              </h2>
+              <div className="trait-center"></div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-8 shadow-sm">
+              <div className="text-center mb-8 pb-6 border-b border-gray-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Christophe Baccou
+                </h3>
+                <p className="text-lg text-gray-600 mb-4">
+                  Praticien certifié en hypnose ericksonienne
+                </p>
+                <p className="text-sm text-gray-500">
+                  <strong>Numéro de Siret :</strong> 822624086
+                </p>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center gap-3 p-3 bg-white rounded-md border border-gray-200">
+                  <strong className="min-w-24 text-gray-900">
+                    Téléphone :
+                  </strong>
+                  <a
+                    href="tel:0637665297"
+                    className="text-primary-600 hover:text-primary-700 hover:underline">
+                    06 37 66 52 97
+                  </a>
+                </div>
+
+                <div className="flex items-center gap-3 p-3 bg-white rounded-md border border-gray-200">
+                  <strong className="min-w-24 text-gray-900">Email :</strong>
+                  <a
+                    href="mailto:christophebaccou.hypnose@gmail.com"
+                    className="text-primary-600 hover:text-primary-700 hover:underline">
+                    christophebaccou.hypnose@gmail.com
+                  </a>
+                </div>
+
+                <div className="flex items-center gap-3 p-3 bg-white rounded-md border border-gray-200">
+                  <strong className="min-w-24 text-gray-900">Lieu :</strong>
+                  <span className="text-gray-600">
+                    14 boulevard du Général de Gaulle 64700 HENDAYE
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-3 p-3 bg-white rounded-md border border-gray-200">
+                  <strong className="min-w-24 text-gray-900">Horaires :</strong>
+                  <span className="text-gray-600">
+                    Du mardi au vendredi en journée et le samedi matin
+                  </span>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div className="accueil-contact">
-            <h1>Comment me contacter ?</h1>
-            <div className="trait"></div>
-            <div>
-              <span className="bold">Christophe Baccou</span>
-              <span> - Praticien certifié en hypnose ericksonienne</span>
-            </div>
-            <div className="info-christophe-siret">
-              <span className="bold">Numéro de Siret :</span>
-              <span> 822624086</span>
-            </div>
-            <div className="info-christophe-contact">
-              <div>
-                <span className="bold">Téléphone : </span>
-                <span>06 37 66 52 97</span>
+              <div className="mb-6 p-4 bg-white rounded-md border border-gray-200">
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                  Accès :
+                </h4>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-3 text-gray-600">
+                    <span className="text-lg">🚗</span>
+                    <span>Parking gratuit à Gaztelu Zahar (140 mètres)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-600">
+                    <span className="text-lg">🚌</span>
+                    <span>Bus n°3 – Arrêt Ville (70 mètres)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-600">
+                    <span className="text-lg">🚌</span>
+                    <span>Bus n°33-35-37 – Arrêt Mairie (220 mètres)</span>
+                  </li>
+                </ul>
               </div>
-              <div>
-                <span className="bold">Email : </span>
-                <a
-                  className="link-mail"
-                  href="mailto:christophebaccou.hypnose@gmail.com"
-                >
-                  christophebaccou.hypnose@gmail.com
-                </a>
+
+              <div className="text-center pt-6 border-t border-gray-200">
+                <p className="text-sm text-gray-500">
+                  <strong>Site hébergé par :</strong> Hostinger
+                </p>
               </div>
-            </div>
-            <div className="info-christophe-venir">
-              <div>
-                <span className="bold">Lieu : </span>
-                <span>14 boulevard du Général de Gaulle 64700 HENDAYE </span>
-              </div>
-              <div>
-                <span className="bold">Horaires : </span>
-                <span>du mardi au vendredi en journée et le samedi matin</span>
-              </div>
-            </div>
-            <div>
-              <span className="bold">Infos : </span>
-              <span>
-                Parking gratuit à Gaztelu Zahar (140 mètres) / Bus n°3 – Arrêt
-                Ville (70 mètres) / Bus n°33-35-37 – Arrêt Mairie (220 mètres){" "}
-              </span>
-            </div>
-            <div className="info-christophe-hebergement">
-              <span className="bold">Site hébergé par :</span>
-              <span> Hostinger</span>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 };
