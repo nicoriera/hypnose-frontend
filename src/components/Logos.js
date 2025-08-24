@@ -25,11 +25,11 @@ const logos = [
 
 const Logos = () => {
   return (
-    <div className="logos-hypnose">
+    <div className="flex items-center gap-6 flex-wrap">
       {logos.map((logo) => (
         <LogoLink
           key={logo.name}
-          className={`logo-${logo.name}`}
+          className="block transition-transform hover:scale-105"
           url={logo.url}
           image={logo.image}
           alt={`logo-${logo.name}`}

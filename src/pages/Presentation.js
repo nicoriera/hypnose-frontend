@@ -1,6 +1,6 @@
 import React from "react";
-import Helmet from "react-helmet";
-// COMPONENTS
+import { Helmet } from "react-helmet";
+
 import Psycho from "../components/Psycho";
 import Comportement from "../components/Comportement";
 import Depassement from "../components/Depassement";
@@ -14,44 +14,61 @@ import PictureDepassement from "../assets/pictures/depassement_de_soi.jpg";
 
 const Presentation = () => {
   return (
-    <div className="container">
+    <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Presentation</title>
         <meta
           name="description"
-          content="L'hypnose est ce que l’on appelle scientifiquement un « état de
+          content="L'hypnose est ce que l'on appelle scientifiquement un « état de
           conscience modifié »."
         />
       </Helmet>
-      <div className="presentation">
-        <div className="presentation-hypnose">
-          <div className="presentation-hypnose-text">
-            <h1>L’hypnose c’est quoi ?</h1>
+
+      <main className="max-w-6xl mx-auto px-6 py-16">
+        {/* Section Introduction */}
+        <section className="bg-white rounded-lg shadow-sm p-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="heading-ultra-clear mb-6">
+                L'hypnose c'est quoi ?
+              </h1>
+              <div className="trait mb-6"></div>
+              <div className="space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  L'hypnose est ce que l'on appelle scientifiquement un « état
+                  de conscience modifié ».
+                </p>
+                <p>
+                  C'est un état naturel que l'on expérimente au quotidien.
+                  Lorsqu'on lit un livre et que notre concentration s'évade,
+                  quand on conduit sur un trajet connu et que l'on ne réfléchit
+                  plus vraiment à la route… Dans tous ces moments-là du
+                  quotidien, nous sommes dans cet état de conscience modifié.
+                  Physiquement ici, mentalement ailleurs. Notre inconscient,
+                  aussi appelée notre partie automatique, prend alors le relais
+                  de notre conscient. En activant de façon volontaire cet état
+                  lors d'une séance, le client accède à toutes ses ressources
+                  nécessaires pour évoluer vers le mieux-être.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={GifVagues}
+                alt="Vagues hypnotiques"
+                className="max-w-full h-auto rounded-lg shadow-sm"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Section Thérapies */}
+        <section className="bg-white rounded-lg shadow-sm p-8 mb-16">
+          <div className="text-center mb-12">
+            <h2 className="heading-ultra-clear mb-6">Thérapies</h2>
             <div className="trait"></div>
-            <p>
-              <p>
-                L'hypnose est ce que l’on appelle scientifiquement un « état de
-                conscience modifié ».
-              </p>
-              C’est un état naturel que l’on expérimente au quotidien. Lorsqu’on
-              lit un livre et que notre concentration s’évade, quand on conduit
-              sur un trajet connu et que l’on ne réfléchit plus vraiment à la
-              route… Dans tous ces moments-là du quotidien, nous sommes dans cet
-              état de conscience modifié. Physiquement ici, mentalement
-              ailleurs. Notre inconscient, aussi appelée notre partie
-              automatique, prend alors le relais de notre conscient. En activant
-              de façon volontaire cet état lors d’une séance, le client accède à
-              toutes ses ressources nécessaires pour évoluer vers le mieux-être.
-            </p>
           </div>
-          <div className="presentation-hypnose-gif">
-            <img src={GifVagues} alt="loading..." />
-          </div>
-        </div>
-        <div className="container-therapies">
-          <h2>Thérapies</h2>
-          <div className="trait"></div>
-          <div className="therapies-blocs">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Psycho
               picture={PicturePsycho}
               therapie="Troubles psychologiques / émotionnels"
@@ -63,7 +80,7 @@ const Presentation = () => {
               trouble6="Colère"
               trouble7="Peurs"
               trouble8="Difficultés personnelles"
-              trouble9="Épreuves de la vie : maladie, séparation, deuil"
+              trouble9="Épreuves de la vie : maladie, séparation, deuil"
               trouble10="Relation difficile aux autres"
               trouble11="Difficulté scolaire"
               trouble12="Etc…"
@@ -93,19 +110,22 @@ const Presentation = () => {
               color="#F3F2EE"
             />
           </div>
-        </div>
-        <div className="presentation-remarque">
-          <h3>Remarque</h3>
-          <p>
+        </section>
+
+        {/* Section Remarque */}
+        <section className="bg-yellow-50 border border-yellow-200 rounded-lg p-8">
+          <h3 className="text-xl font-bold text-yellow-800 mb-4">Remarque</h3>
+          <p className="text-yellow-700 leading-relaxed">
             Une séance d'hypnose ne remplace en aucune manière un avis ou un
             traitement médical. Seul un médecin peut poser des diagnostics et
             lui seul est habilité à prescrire, modifier ou supprimer un
             traitement médical. L'hypnose peut vous accompagner lors de votre
             traitement prescrit par votre médecin, parlez-en avec lui.
           </p>
-        </div>
-        <Footer />
-      </div>
+        </section>
+      </main>
+
+      <Footer />
     </div>
   );
 };
