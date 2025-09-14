@@ -45,43 +45,7 @@ const Accueil = () => {
         </div>
       </section>
 
-      {/* Section principale */}
-      <main className="bg-white">
-        {/* Section Introduction */}
-        <section className="py-16 bg-gradient-to-br from-primary-50 to-white">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="mb-8">
-                <h2 className="heading-ultra-clear mb-6">
-                  Comment l'hypnose peut vous aider ?
-                </h2>
-                <div className="trait-center"></div>
-                <p className="text-lg text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
-                  Si vous êtes sur mon site, c'est que l'idée de changement fait
-                  écho en vous. Une très grande majorité de nos maux sont
-                  installés ou maintenus par la partie consciente de notre
-                  cerveau. L'état d'hypnose, en laissant intervenir notre partie
-                  inconsciente, va nous permettre de trouver des solutions pour
-                  reprendre le contrôle sur nos vies. Vous avez déjà, sans le
-                  savoir, fait une partie du chemin.
-                </p>
-                <p className="text-xl font-semibold text-gray-900 mb-8">
-                  Continuons cette route ensemble.
-                </p>
-                <div className="mt-8">
-                  <a
-                    href="https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary btn-lg">
-                    Prendre rendez-vous
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+      <main>
         {/* Section Pourquoi consulter */}
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-6">
@@ -163,14 +127,12 @@ const Accueil = () => {
                       tabac
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
-                      ✓
-                    </span>
-                    <span className="text-gray-600 leading-relaxed">
-                      Formation complémentaire en gestion des troubles du
-                      sommeil
-                    </span>
+                  <li>
+                    Formation complémentaire en gestion des troubles du sommeil
+                  </li>
+                  <li>
+                    Certifié technicien en PNL (programmation
+                    neuro-linguistique)
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-500 text-lg font-bold mr-3 mt-0.5">
@@ -301,11 +263,13 @@ const Accueil = () => {
                   </li>
                 </ul>
               </div>
-
-              <div className="text-center pt-6 border-t border-gray-200">
-                <p className="text-sm text-gray-500">
-                  <strong>Site hébergé par :</strong> Hostinger
-                </p>
+              <div>
+                <span className="bold">Email : </span>
+                <a
+                  className="link-mail"
+                  href="mailto:christophebaccou.hypnose@gmail.com">
+                  christophebaccou.hypnose@gmail.com
+                </a>
               </div>
             </div>
           </div>
