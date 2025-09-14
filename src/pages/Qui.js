@@ -32,11 +32,12 @@ const Qui = () => {
               qu’un jour ou l’autre, je deviendrai hypnothérapeute.
             </p>
             <p>
-              Formé à l’hypnose Ericksonnienne et à la PNL (Programmation Neuro
-              Linguistique) au sein de l’école de Psychothérapie Psynapse
+              Formé à l'hypnose Ericksonnienne et à la PNL (Programmation Neuro
+              Linguistique) au sein de l'école de Psychothérapie Psynapse
               (Institut Européen reconnu par le World Hypnosis Organization
               (WHO)), je suis également diplômé de la spécialité gestion du
-              poids et arrêt du tabac.
+              poids et arrêt du tabac, ainsi qu'en gestion des troubles du
+              sommeil.
             </p>
             <p>
               Installé sur Hendaye au 14 boulevard Charles de Gaulle, je vous

@@ -56,8 +56,7 @@ const Accueil = () => {
             <a
               href="https://www.resalib.fr/praticien/66295-christophe-baccou-hypnotherapeute-hendaye#newrdvmodal"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <Button text="Prendre rendez-vous" />
             </a>
           </div>
@@ -86,8 +85,7 @@ const Accueil = () => {
                     className="accueil-pourquoi-link"
                     to="/presentation"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    rel="noopener noreferrer">
                     <Pourquoi
                       picture={PicturePlus}
                       alt="en_savoir_plus"
@@ -115,6 +113,9 @@ const Accueil = () => {
                   <li>
                     Formation complémentaire en gestion du poids et arrêt du
                     tabac
+                  </li>
+                  <li>
+                    Formation complémentaire en gestion des troubles du sommeil
                   </li>
                   <li>
                     Certifié technicien en PNL (programmation
@@ -165,8 +166,7 @@ const Accueil = () => {
                 <span className="bold">Email : </span>
                 <a
                   className="link-mail"
-                  href="mailto:christophebaccou.hypnose@gmail.com"
-                >
+                  href="mailto:christophebaccou.hypnose@gmail.com">
                   christophebaccou.hypnose@gmail.com
                 </a>
               </div>

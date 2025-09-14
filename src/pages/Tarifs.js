@@ -31,21 +31,11 @@ const Tarifs = () => {
               <Rdv
                 rdv="RDV enfant-adolescent"
                 soustitre="(7-17 ans)"
-                infos="Comme pour l’adulte, chaque séance est unique.
-            J’accompagne votre enfant / adolescent avec bienveillance."
-                duree=" de 1h à 1h15"
-                prix="45€"
-                color="#F3F2EE"
-              />
-              <Tarif
-                tarif="RDV Tarif réduit"
-                etudiant="Étudiant"
-                demandeur="Demandeur d'emploi"
-                rsa="RSA"
-                infos="Pensez à prendre votre justificatif, sinon le prix sera celui d’une séance adulte."
+                infos="Comme pour l'adulte, chaque séance est unique.
+            J'accompagne votre enfant / adolescent avec bienveillance."
                 duree=" de 1h à 1h15"
                 prix="50€"
-                color="#F2F7F6"
+                color="#F3F2EE"
               />
             </div>
             <div className="forfaits-blocs">
