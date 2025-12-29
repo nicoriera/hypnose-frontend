@@ -1,5 +1,4 @@
 import React from "react";
-import Map from "../components/Map";
 import Helmet from "react-helmet";
 
 const Contact = () => {
@@ -63,7 +62,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <Map />
       </div>
     </div>
   );

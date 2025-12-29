@@ -506,6 +506,8 @@ h1 {
 
 .container-contact {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 80px;
   width: 50%;
 }
