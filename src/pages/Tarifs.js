@@ -25,7 +25,7 @@ const Tarifs = () => {
                 infos="Chaque personne est unique, chaque séance l’est aussi. Je vous
             accompagne à votre rythme vers votre objectif"
                 duree=" de 1h à 1h30"
-                prix="60€"
+                prix="70€"
                 color="#FCF9EF"
               />
               <Rdv
@@ -49,13 +49,13 @@ const Tarifs = () => {
               <Forfait
                 forfait="Forfait Gestion du poids"
                 infos="Ce programme se fait sur du moyen/long terme. Il est de 4 séances espacées chacune de plusieurs semaines (3 à 8)"
-                prix="200€"
+                prix="250€"
                 color="#EDF0F5"
               />
               <Forfait
                 forfait="Forfait anneau gastrique hypnotique"
                 infos="La pose de l’anneau gastrique hypnotique se fait sur 4 séances, plus une séance de suivi 2 mois après l’installation de l’anneau"
-                prix="300€"
+                prix="350€"
                 color="#EDF0F5"
               />
             </div>

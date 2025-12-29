@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Map from "../components/Map"
-
 const FooterMap = (props) => {
     return (
         <div className="container-footer">
@@ -12,9 +10,6 @@ const FooterMap = (props) => {
             <div>64700 HENDAYE</div>
             <div>Tél. 06 xx xx xx xx</div>
             <div>christophebaccou.hypnose@gmail.com</div>
-            </div>
-            <div>
-            <Map />
             </div>
           </div>
     )
